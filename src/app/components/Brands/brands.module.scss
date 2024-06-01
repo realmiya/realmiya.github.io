@@ -1,0 +1,18 @@
+.brands {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+    .brandItem {
+        padding: 20px 0;
+    }
+
+    .brandImg {
+        height: 85px;
+        width: 85px;
+        background-color: #476cbc;
+        background-image: url("/brands/8a73a2eeab599077d64898aafd00b40d.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

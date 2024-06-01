@@ -1,0 +1,57 @@
+.breadcrumbs {
+  list-style: none;
+  
+  @include	bpblock(xxs, xxxs) {
+	padding:0;
+  }
+  
+  &:after{
+	clear:both;
+	content:'';
+	display: block;
+  }
+  li {
+	float:left;
+	display:inline-block;
+	
+	a, span{
+	  text-decoration: none;
+	  padding:0 15px;
+	  @include font-size(17px);
+	  @include bpblock( xxs, xxxs){
+		padding:0 6px;
+		@include font-size(15px);
+	  }
+	  
+	  
+	  &.home {
+		padding-right: 0;
+		i {
+		  font-size: 17px;
+		  @include bpblock(xxs, xxxs){
+			@include font-size(15px);
+			top:0;
+		  }
+		}		
+	  }
+	  
+	  &.active {
+		color:$color-manatee;
+	  }
+	  
+	}
+	a:hover {
+	  text-decoration:underline; 
+	}
+	
+	i {
+	  font-size:12px;
+	  position: relative;
+	  
+	  @include bpblock(xxs, xxxs){
+		font-size:8px;
+		top:-1px;
+	  }
+	}
+  }
+}

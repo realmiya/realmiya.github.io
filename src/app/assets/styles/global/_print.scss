@@ -1,0 +1,153 @@
+/** print **/
+
+.page-break { display: none; }
+.not-print{
+	display: none !important;
+}
+@media print {
+	table { page-break-inside:auto; }
+	tr    { page-break-inside:avoid; page-break-after:auto }
+	thead { display:table-header-group }
+	tfoot { display:table-footer-group }
+  	.print-break-avoid { page-break-inside: avoid; page-break-before: always; }
+  	body {
+	  padding-top: 0;
+	}
+  	header{
+	  &.sticky-header{
+	  	position: relative !important;		
+	  }
+	  .logo{
+		width: auto;
+		max-width: inherit !important;
+	  }
+	}
+	h1 {
+		@include font-size(32px);				
+	}
+  
+  	h3 {
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  font-weight:bold;
+	  line-height:1.3em;
+	  @include font-size(14px);
+	}
+	body, p, li, a,
+	table tr td,
+	.table tr td{
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  @include font-size(12px);
+	  line-height: 1.2em;
+		.intro {
+		  @include font-size(14px);
+		}
+	}
+
+  	table {
+	  &.table,
+	  &.nutrition-summary {
+	  	tr {
+		  border:none !important;
+		  td {
+		  	padding:3px 5px !important;
+		  }
+		  &.indent td{
+			span { top: -5px !important; }
+		  }
+		}
+	  } 
+	  
+	  &.nutrition-summary {
+		tr {
+		  &:first-child td {
+			font-weight:bold;
+		  }
+		  
+		  td{
+			  width:33.33% !important;
+		  }
+		} 
+	  }
+	}
+	.embed-responsive, nav, .navicon, .button, footer, .hidden-print, .newsletter {
+		display: none !important;
+	}	
+	.page-break	{ 
+		display: block; 
+		page-break-before: always; 
+	}
+  
+	.display-print{
+	  display:block !important;
+	}
+  
+	.print-align{
+	  &.left{
+		text-align: left !important;
+	  }
+	}
+  
+  	.print-font {
+	  &.fs-25 {
+		font-size: 25px !important;
+	  }
+	}
+  
+  	.print-float {
+	  &.flright {
+		display:inline-block;
+		width: 60%;
+		flex: none;
+		clear: right;
+	  }
+	  &.flleft {
+		display:inline-block;
+		width: 40%;
+		flex: none;
+		clear: left;
+	  }
+	}
+  
+  	.no-pad-top {padding-top:0 !important;}
+  	.no-pad-left {padding-left:0 !important;}
+  	.print-mar-top-20 { margin-top:20px !important; }
+	.print-mar-top-15 { margin-top:15px !important;	}
+	.no-mar-top { margin-top:0 !important;}
+  	.no-mar-left { margin-left:0 !important;}
+  	.no-mar-right { margin-right:0 !important;}
+	
+  	/* Recipe/Ideas Styles */
+  	body {
+	  &.recipe,
+	  &.ideas {
+		h1 {
+		  font-size:35px !important;
+		}
+	  }
+	}
+	.print-ingredients,
+	.print-method {
+		border:none !important;
+	  	padding:0 8.5px !important;
+	  	margin: 0 !important;
+  	}
+  
+  	.print-no-border {
+	  border:none;
+	}
+  
+  /* Product list Styles */
+  .headline-print {
+	display:inline-block;
+	width:50%;
+	flex:none;
+  }
+
+  .product-print-table{
+	td,th {
+	  padding:10px;
+	}
+  }
+  
+  	
+}

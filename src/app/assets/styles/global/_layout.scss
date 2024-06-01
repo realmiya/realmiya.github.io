@@ -1,0 +1,103 @@
+body {
+    padding-top: 1.75rem;
+    @include bpblock(xs) {
+        padding-top: 150px;
+    }
+    @include bpblock(xxs) {
+        padding-top: 100px;
+    }
+    @include bpblock(xxxs) {
+        padding-top: 90px;
+    }
+    @include bpblock(xxxxs) {
+        padding-top: 70px;
+    }
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+.container-fluid {
+}
+
+.wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 100%;
+
+    &.padded {
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+
+    &.margin-mobile {
+        @include bpblock(xs, xxs, xxxs) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.divider {
+    // margin-top:1rem;
+    @include bpblock(xs, xxs, xxxs) {
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+    background-color: $color-alto;
+    color: $color-abbey;
+    h2 {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        font-size: 30px;
+        font-size: 1.875rem;
+        line-height: 1.8rem;
+    }
+}
+
+.flex {
+    @include display-flex();
+
+    &.center {
+        @include align-items(center);
+    }
+
+    &.stretch {
+        @include align-items(stretch);
+        width: 100%;
+    }
+
+    &.space-between {
+        //justify-content: space-between;
+        @include justify-content(space-between);
+    }
+
+    &.space-around {
+        //justify-content: space-around;
+        @include justify-content(space-around);
+    }
+
+    &.center-h {
+        //justify-content: center;
+        @include justify-content(center);
+    }
+}
+
+/* text positioning */
+.tcenter {
+    text-align: center;
+}
+
+@include bpblock(xs, xxs, xxxs) {
+    &.tcenter-xs {
+        text-align: center;
+    }
+}
+
+.animated {
+    @include transition(all 600ms $timing);
+    @include transition-timing($timing);
+}

@@ -1,0 +1,75 @@
+@import "../../../assets/styles/global/_variables.scss";
+@import "../../../assets/styles/global/_mixins.scss";
+.header {
+    max-width: 1200px;
+    // margin: 1.75rem 2rem;
+
+    width: 100%;
+    // position: relative;
+    .navHeader {
+        height: 102px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        // .nav__header {
+        // }
+        .appLogo_letter {
+            margin-left: 15px;
+            font-family: "Alegre Sans Regular NC";
+            padding: 0 1rem;
+            margin: 0;
+            // height: 25px;
+            color: $color-abbey;
+            font-size: 21px;
+            white-space: nowrap;
+        }
+
+        // .appLogo {
+        //     background-image: url(./m_logo_flower.svg);
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     background-position: center center;
+        // }
+
+        .rightHeader {
+            color: red;
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            height: 25px;
+
+            .slogan {
+                font-size: 32px;
+
+                font-weight: bolder;
+                color: whitesmoke;
+            }
+
+            nav {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .menuOption {
+                    padding: 10px;
+                    margin: 0 5px;
+                    color: whitesmoke;
+                    border: 2px solid whitesmoke;
+                    border-radius: 10px;
+                }
+
+                a:visited,
+                a:active,
+                a:link,
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

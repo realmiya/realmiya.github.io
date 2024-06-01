@@ -1,0 +1,26 @@
+$font-size-base: 14px;
+$enable-flex: true;
+$fonts-folder: "../fonts/";
+
+$social-icons-folder: "../images/social/";
+// colors
+
+// $color-abbey: #55565a;
+$color-abbey: #f7f7f7;
+
+// $royal-blue: #476cbc;
+
+$color-dark-black-grey: #20252e;
+
+$color-jumbo: #20252e;
+$color-manatee: #99999a;
+$color-nobel: #b3b2b1;
+$color-alto: #d9d8d8;
+$color-lightGrey: #f7f7f7;
+$color-white: #fff;
+
+//
+
+$breakpoints: ("lg", "md", "sm", "xs", "xxs", "xxxs", "xxxxs");
+$timing: cubic-bezier(0.77, 0, 0.175, 1);
+$spaces: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60);

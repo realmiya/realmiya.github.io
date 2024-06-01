@@ -1,0 +1,94 @@
+@import "../../assets/styles/global/_variables.scss";
+
+.dropdown {
+    padding: 0;
+    display: flex;
+    position: relative;
+    .menu {
+        font-family: "Alegre Sans Regular NC";
+        font-size: 1.625rem;
+        flex: 1 1 0;
+        width: 100%;
+        text-transform: capitalize;
+
+        border-radius: 0;
+        line-height: 1;
+        color: $color-abbey;
+        position: relative;
+        &:hover {
+            transition: all 0.2s ease-out;
+            background-color: $color-jumbo;
+            .dropbtn {
+                color: $color-white;
+                background-color: $color-jumbo;
+            }
+        }
+
+        .dropbtn {
+            width: 100%;
+            margin: 1rem 0;
+            color: $color-abbey;
+            border-style: none;
+            font-size: 1.625rem;
+            background-color: $color-lightGrey;
+            cursor: pointer;
+            border-left: 1px solid $color-abbey;
+            transition: all 0.2s ease-out;
+            &.ele0 {
+                border-style: none;
+            }
+        }
+
+        .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: calc(3.625rem - 3px);
+            border-top: 3px solid #f9f9f9;
+            background-color: $color-jumbo;
+            z-index: 1;
+            width: 100%;
+            transform: scaleY(0);
+            &.closed {
+            }
+            &.expanded {
+                transform-origin: top center;
+                transform: scaleY(1);
+                transition: transform 0.2s ease-in-out;
+            }
+
+            a {
+                color: $color-white;
+                padding: 12px 16px;
+                text-decoration: none;
+                position: relative;
+                hr {
+                    position: absolute;
+                    bottom: 0;
+                    width: 30%;
+                    left: 35%;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    &.none {
+                        clear: both;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .dropdown:after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: -2rem;
+//     width: 100vw;
+//     height: 3px;
+//     background: #e46e26;
+//     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U0NmUyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y5YTUxYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmRkMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+//     background: -webkit-linear-gradient(left, #e46e26, #f9a51a 50%, #fd0);
+//     background: linear-gradient(90deg, #e46e26 0, #f9a51a 50%, #fd0);
+//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e46e26',endColorstr='#ffdd00',GradientType=1);
+// }

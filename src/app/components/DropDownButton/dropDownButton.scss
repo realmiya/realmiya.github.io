@@ -1,0 +1,106 @@
+@import "../../assets/styles/global/_variables.scss";
+
+.dropdown {
+    padding: 0;
+    display: flex;
+    position: relative;
+
+    .menu {
+        font-family: "Alegre Sans Regular NC";
+        flex: 1 1 0;
+        width: 100%;
+        // text-transform: uppercase;
+        text-transform: capitalize;
+        border-radius: 0;
+        line-height: 1;
+        color: $color-abbey;
+        position: relative;
+
+        &:hover {
+            transition: all 0.2s ease-out;
+            background-color: $color-jumbo;
+            .dropbtn {
+                color: $color-white;
+            }
+        }
+
+        .dropbtn {
+            width: 100%;
+            margin: 1rem 0;
+            // color: $color-abbey;
+            color: $color-abbey;
+
+            border-style: none;
+            cursor: pointer;
+            border-left: 1px solid $color-abbey;
+            transition: all 0.2s ease-out;
+            &.ele0 {
+                border-style: none;
+            }
+        }
+
+        .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: calc(3.625rem - 7px);
+            border-top: 7px solid #f9f9f9;
+            background-color: $color-jumbo;
+            z-index: 2;
+            width: 100%;
+            transform: scaleY(0);
+            &.closed {
+            }
+            &.expanded {
+                transform-origin: top center;
+                transform: scaleY(1);
+                transition: transform 0.2s ease-in-out;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            a {
+                text-align: center;
+                color: $color-white;
+                padding: 12px 16px;
+                text-decoration: none;
+                position: relative;
+                hr {
+                    position: absolute;
+                    bottom: 0;
+                    width: 30%;
+                    left: 35%;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    &.none {
+                        clear: both;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+        &.main {
+            font-size: 1.625rem;
+        }
+
+        &.nav {
+            font-size: 1.25rem;
+            text-decoration: none;
+
+            .dropbtn {
+                padding: 0 1rem;
+                margin: 0;
+                height: 25px;
+
+                &.ele0 {
+                    border-style: solid;
+                }
+            }
+            .dropdown-content {
+                width: 200%;
+                top: 25px;
+                border-radius: 4px;
+            }
+        }
+    }
+}

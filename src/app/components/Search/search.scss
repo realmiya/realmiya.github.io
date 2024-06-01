@@ -1,0 +1,69 @@
+form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+    height: 123%;
+    right: 1rem;
+    border-radius: 6px;
+    .searchIcon {
+        position: absolute;
+        left: 5px;
+        font-size: 1.7rem;
+        box-sizing: border-box;
+        background: #f7f7f7;
+        z-index: 2;
+        padding: 5px 5px 3px 7px;
+        border-radius: 13px;
+        cursor: pointer;
+    }
+
+    input {
+        position: relative;
+        height: 100%;
+        width: 1px;
+        padding: 0 6px;
+        font-size: 1rem;
+        line-height: normal;
+        padding-left: 15px;
+        color: #55565a;
+        &:focus {
+            border: 1px solid #d9d8d8;
+        }
+
+        &.false {
+            border: 0px;
+            transform-origin: right top;
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        &.true {
+            background-color: #f7f7f7;
+            padding: 12px;
+            padding-right: 18px;
+            padding-left: 30px;
+            width: 200px;
+            border: 1px solid #d9d8d8;
+            transform: scaleX(1);
+            transform-origin: right top;
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+            &.onblur {
+                border: 1px solid #55565a;
+                width: 200px;
+            }
+        }
+    }
+    .closeSearchBtn {
+        position: absolute;
+        right: 9px;
+        color: #55565a;
+        font-size: 0.9rem;
+        padding: 2px;
+        cursor: pointer;
+    }
+    input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}

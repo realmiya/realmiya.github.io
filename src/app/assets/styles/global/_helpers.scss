@@ -1,0 +1,281 @@
+//$breakpoints in _variable.scss
+
+@each $bp in $breakpoints {
+  .no-padding-#{$bp} {
+    @include breakpoint($bp) {
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  }
+
+  .no-margin-#{$bp} {
+    @include breakpoint($bp) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .padded-#{$bp} {
+    @include breakpoint($bp) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .padded-tb-#{$bp} {
+	@include breakpoint($bp) {
+	  padding-top: 1rem;
+	  padding-bottom: 1rem;
+	}
+  }
+  
+  .no-stretch-#{$bp} {
+    @include breakpoint($bp) {
+	  @include align-items(flex-start);
+    }
+  }
+
+  .no-flex-#{$bp} {
+    @include breakpoint($bp) {
+      display: block;
+    }
+  }
+  
+  .row {
+    &.fluid-#{$bp} {
+      @include breakpoint($bp) {
+        margin-left: -2rem;
+        margin-right: -2rem;
+      }
+    }
+  }
+  .hidden-#{$bp} {
+    @include breakpoint($bp) {
+      display: none!important;
+    }
+  }
+  .margintb-#{$bp} {
+    @include breakpoint($bp) {
+      margin: 40px auto!important;
+    }
+  }
+}
+
+
+.img-responsive {
+  @include img-responsive();
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center-xs {
+  @include bpblock(xs,xxs,xxxs){
+	@include justify-content(center);
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0!important;
+}
+
+.no-padding-right{
+  padding-right: 0;
+}
+.no-padding-left{
+  padding-left: 0;
+}
+
+@include bpblock(xs, xxs, xxxs) {
+  .no-padding-right-xs{
+	padding-right: 0;
+  }
+  .no-padding-left-xs{
+	padding-left: 0;
+  } 
+}
+
+.mr-04 {
+	margin-right:0.4rem;
+}
+
+.ml-04 {
+	margin-left: 0.4rem;
+}
+
+// Embeds responsive
+//
+// Credit: Nicolas Gallagher and SUIT CSS.
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  
+  &.embed-responsive-16by9 {
+    padding-bottom: 55%;
+    @include breakpoint(sm) {
+      //padding-bottom:45.7%;
+    }
+
+    @include bpblock(xs, xxs, xxxs) {
+      padding-bottom: 87%;
+    }
+
+	@include bpblock(xxxxs) {
+	  padding-bottom: 77%;
+	}
+  }
+
+ 	&.embed-responsive-4by3 {
+	  padding-bottom: 80%;
+	}
+}
+
+
+/* padding */
+.pad {
+  @each $s in $spaces {
+  	&.p-#{$s}	{ padding: #{$s}px; }
+  	&.pt-#{$s} 	{ padding-top: #{$s}px; }
+  	&.pb-#{$s} 	{ padding-bottom: #{$s}px; }
+  	&.pl-#{$s} 	{ padding-left: #{$s}px;  }
+  	&.pr-#{$s} 	{ padding-right: #{$s}px;  }
+  }
+}
+/* margin */
+.mar {
+  @each $s in $spaces {
+	&.m-#{$s} 	{ margin: #{$s}px; }
+	&.mt-#{$s} 	{ margin-top: #{$s}px; }
+	&.mb-#{$s} 	{ margin-bottom: #{$s}px; }
+	&.ml-#{$s} 	{ margin-left: #{$s}px;  }
+	&.mr-#{$s} 	{ margin-right: #{$s}px;  }
+  }
+
+  &.mtn-10 { margin-top: -10px; }
+  &.mtn-20 { margin-top: -20px; }
+  &.mtn-30 { margin-top: -30px; }
+  &.mln-1 { margin-left: -1px; }
+}
+
+// @include bpblock(xs,xxs,xxxs) {
+@each $bp in $breakpoints {
+  .pad {
+	@each $s in $spaces {
+	  &.p-#{$s}-#{$bp} 	{ padding: #{$s}px; }
+	  &.pt-#{$s}-#{$bp} { padding-top: #{$s}px; }
+	  &.pb-#{$s}-#{$bp} { padding-bottom: #{$s}px; }
+	  &.pl-#{$s}-#{$bp} { padding-left: #{$s}px; }
+	  &.pr-#{$s}-#{$bp} { padding-right: #{$s}px; }
+	}
+  }
+  .mar {
+    @each $s in $spaces {
+      @include breakpoint($bp) {
+        &.m-#{$s}-#{$bp}	{ margin: #{$s}px; }
+        &.mt-#{$s}-#{$bp} { margin-top: #{$s}px; }
+        &.mb-#{$s}-#{$bp} { margin-bottom: #{$s}px; }
+        &.ml-#{$s}-#{$bp}	{ margin-left: #{$s}px;  }
+        &.mr-#{$s}-#{$bp}	{ margin-right: #{$s}px;  }
+      }
+    }
+  }
+}
+
+.br-1 { border-right:1px solid #55565a; }
+.bl-1 { border-left:1px solid #55565a; }
+.bt-1 { border-top:1px solid #55565a; }
+.bb-1 { border-bottom:1px solid #55565a; }
+
+.vid-bt-1 { border-top:1px solid #d9d8d8; }
+
+@include bpblock(xs, xxs,xxxs) {
+  .bb-1-xs {
+	border-bottom: 1px solid #55565a;
+  }
+  .no-br-xs {
+	border-right: none;
+  }
+  .no-bl-xs {
+	border-left: none;
+  }
+}
+
+
+.hide-this {
+  display: none !important;
+}
+
+.hide-mobile {
+  @include bpblock(xs, xxs, xxxs){
+	display:none !important;
+  }
+}
+
+.hide-search-mobile {
+  @include bpblock( xxxs){
+	display:none !important;
+  }
+}
+
+.word-wrap {
+  @include wordbreak();
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.bgcolor {
+  &.light-alto {
+	background-color: lighten($color-alto, 9%);
+  }
+  &.none {
+	background-color: transparent !important;
+  }
+}
+
+[data-show='dontshow'] {
+  display:none !important;
+}
+[data-show='showme'] {
+  display:block !important;
+}
+
+a.no-underline {
+  text-decoration: none;
+}

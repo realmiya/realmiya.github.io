@@ -1,0 +1,241 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@mixin transition($args...) {
+    // -webkit-transition: $args;
+    // -moz-transition: $args;
+    // -ms-transition: $args;
+    // -o-transition: $args;
+    transition: $args;
+}
+
+@mixin wordbreak() {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+@mixin opacity($op) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity= $op * 100)";
+    filter: alpha(opacity= $op * 100);
+    -moz-opacity: $op;
+    -khtml-opacity: $op;
+    opacity: $op;
+}
+
+@mixin transition-timing($args...) {
+    // -webkit-transition-timing-function: $args;
+    //   -moz-transition-timing-function: 	$args;
+    //     -o-transition-timing-function: 	$args;
+    transition-timing-function: $args;
+}
+
+@mixin transform($transforms) {
+    //    -moz-transform: $transforms;
+    //      -o-transform: $transforms;
+    //     -ms-transform: $transforms;
+    // -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+// translate
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+// skew
+@mixin skew($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin breakpoint($point) {
+    @if ($point == lg) {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if ($point == md) {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    } @else if ($point == smm) {
+        @media (min-width: 860px) and (max-width: 991px) {
+            @content;
+        }
+    } @else if ($point == smd) {
+        @media (min-width: 768px) and (max-width: 859px) {
+            @content;
+        }
+    } @else if ($point == sm) {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    } @else if ($point == xs) {
+        @media (max-width: 767px) and (min-width: 641px) {
+            @content;
+        }
+    } @else if ($point == xxs) {
+        @media (max-width: 640px) and (min-width: 481px) {
+            @content;
+        }
+    } @else if ($point == xxxs) {
+        @media (max-width: 480px) {
+            @content;
+        }
+    } @else if ($point == xxxxs) {
+        @media (max-width: 320px) {
+            @content;
+        }
+    }
+}
+
+@mixin bpblock($points...) {
+    @each $bp in $points {
+        @include breakpoint($bp) {
+            @content;
+        }
+    }
+}
+
+@mixin img-responsive($display: block) {
+    display: $display;
+    max-width: 100%; // Part 1: Set a maximum relative to the parent
+    height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin border-radius($rad) {
+    border-radius: $rad;
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+}
+
+@mixin flex($val: 1, $width: 20%) {
+    -webkit-box-flex: $val;
+    -moz-box-flex: $val;
+    width: $width;
+    -webkit-flex: $val;
+    -ms-flex: $val;
+    flex: $val;
+}
+
+@mixin align-items($val) {
+    -webkit-box-align: $val;
+    -moz-box-align: $val;
+    -ms-flex-align: $val;
+    -webkit-align-items: $val;
+    align-items: $val;
+}
+
+@mixin justify-content($val) {
+    $msval: $val;
+    @if ($val == space-around) {
+        $msval: center;
+    } @else {
+        $msval: $val;
+    }
+    -webkit-box-pack: $val;
+    -webkit-justify-content: $val;
+    -ms-flex-pack: $msval;
+    justify-content: $val;
+    text-align: $val;
+}
+
+@mixin orange-gradient() {
+    background: #80c0e8;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U0NmUyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y5YTUxYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmRkMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(
+        left,
+        #a3daf5 0%,
+        #6099ef 50%,
+        #0eabf3 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        #c0def3 0%,
+        #4787d6 50%,
+        #1e66da 100%
+    );
+    background: linear-gradient(
+        to right,
+        #b2e2ea 0%,
+        #77a5e5 50%,
+        #2858b2 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e46e26', endColorstr='#ffdd00',GradientType=1 );
+}
+
+@mixin orange-gradient-reverse() {
+    background: #3e61b8; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #2dcad9 0%,
+        #568cdf 50%,
+        #0da4ea 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        #5788ab 0%,
+        #4787d6 50%,
+        #1e66da 100%
+    );
+    background: linear-gradient(
+        to right,
+        #51a9b9 0%,
+        #5581c0 50%,
+        #2858b2 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd00', endColorstr='#e46f26',GradientType=1 ); /* IE6-9 */
+}
+
+@mixin orange-gradient-vertical() {
+    background: #3e61b8; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #2dcad9 0%,
+        #568cdf 50%,
+        #0da4ea 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        #5788ab 0%,
+        #4787d6 50%,
+        #1e66da 100%
+    );
+    background: linear-gradient(
+        to right,
+        #51a9b9 0%,
+        #5581c0 50%,
+        #2858b2 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e46f26', endColorstr='#ffdd00',GradientType=0 ); /* IE6-9 */
+}
+
+//.class  {
+//  @include breakpoint(sm){
+//    width: 60%;
+//  }
+//}
