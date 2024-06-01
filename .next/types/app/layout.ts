@@ -1,4 +1,4 @@
-// File: /Users/xiaoyudong/6080/realmiya/src/app/layout.js
+// File: /Users/xiaoyudong/6080/realmiya/src/app/layout.jsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
