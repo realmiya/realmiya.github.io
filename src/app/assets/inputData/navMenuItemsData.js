@@ -3,7 +3,7 @@ export const navMenuItems = {
         {
             title: "About",
             mobileTitle: "About",
-            path: "/About",
+            path: "/about",
             cName: "menu-btn",
         },
     ],
@@ -11,7 +11,7 @@ export const navMenuItems = {
         {
             title: "Contact",
             mobileTitle: "Contact",
-            path: "/Contact",
+            path: "/contact",
             cName: "menu-btn",
         },
     ],

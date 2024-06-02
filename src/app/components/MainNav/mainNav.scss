@@ -1,15 +1,17 @@
 @import "../../assets/styles/global/_variables.scss";
 
 .dropdown {
-    padding: 0;
+    padding: 10px;
     display: flex;
     position: relative;
     .menu {
         font-family: "Alegre Sans Regular NC";
+        color: red;
+
         font-size: 1.625rem;
         flex: 1 1 0;
         width: 100%;
-        text-transform: capitalize;
+        // text-transform: capitalize;
 
         border-radius: 0;
         line-height: 1;
@@ -27,7 +29,7 @@
         .dropbtn {
             width: 100%;
             margin: 1rem 0;
-            color: $color-abbey;
+            // color: $color-abbey;
             border-style: none;
             font-size: 1.625rem;
             background-color: $color-lightGrey;
@@ -58,7 +60,9 @@
             }
 
             a {
-                color: $color-white;
+                // color: $color-white;
+                text-transform: none !important;
+                color: red;
                 padding: 12px 16px;
                 text-decoration: none;
                 position: relative;

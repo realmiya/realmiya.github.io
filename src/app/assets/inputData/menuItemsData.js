@@ -3,59 +3,45 @@ export const menuItems = {
         {
             title: "My Works",
             mobileTitle: "Works",
-            path: "/Works/all",
+            path: "/works/all",
             cName: "menu-btn",
         },
 
         {
-            title: "Lunch Rolls & Burger Buns",
-            path: "/Lunch",
+            title: "Web Pages",
+            path: "/works/web-pages",
             cName: "dropdown-link",
         },
         {
-            title: "Sliced Breads",
-            path: "/",
+            title: "ios E-detail",
+            path: "/works/e-detail",
+            cName: "dropdown-link",
+        },
+
+        {
+            title: "Data Cleaning",
+            path: "/works/data-cleaning",
             cName: "dropdown-link",
         },
         {
-            title: "Garlic Breads",
-            path: "/",
+            title: "Projects Made in Uni",
+            path: "/works/uni-projects",
             cName: "dropdown-link",
         },
         {
-            title: "Breakfast Breads",
-            path: "/",
-            cName: "dropdown-link",
-        },
-        {
-            title: "Dinner Rolls & Sliders",
-            path: "/",
-            cName: "dropdown-link",
-        },
-        {
-            title: "Sharing Loaves & Baguettes",
-            path: "/",
-            cName: "dropdown-link",
-        },
-        {
-            title: "Gluten Free",
-            path: "/",
-            cName: "dropdown-link",
-        },
-        {
-            title: "Pizza Bases",
+            title: "In Coming...",
             path: "/",
             cName: "dropdown-link",
         },
     ],
-    "My Skills": [
-        {
-            title: "My Skills",
-            mobileTitle: "Skills",
-            path: "/myskills",
-            cName: "menu-btn",
-        },
-    ],
+    // "My Skills": [
+    //     {
+    //         title: "My Skills",
+    //         mobileTitle: "Skills",
+    //         path: "/myskills",
+    //         cName: "menu-btn",
+    //     },
+    // ],
     Inspiration: [
         {
             title: "Inspiration",
