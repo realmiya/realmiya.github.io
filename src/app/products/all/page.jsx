@@ -1,5 +1,5 @@
 import React from "react";
-import "./WorksPage.module.scss";
+import "./productPage.module.scss";
 import Banner from "../../components/Banner/Banner.jsx";
 
 import Brands from "../../components/Brands/Brands";
