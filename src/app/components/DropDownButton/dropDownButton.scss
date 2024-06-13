@@ -6,21 +6,22 @@
     position: relative;
 
     .menu {
-        font-family: "Alegre Sans Regular NC";
+        // font-family: "Lucida Sans Unicode Regular";
+        font-family: "PalmBeach Trial", sans-serif;
         flex: 1 1 0;
         width: 100%;
-        // text-transform: uppercase;
-        // text-transform: capitalize;
         border-radius: 0;
         line-height: 1;
         color: $color-abbey;
-        position: relative;
 
+        position: relative;
         &:hover {
             transition: all 0.2s ease-out;
-            background-color: $color-jumbo;
+            background-color: rgba(32, 37, 46, 0.1);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             .dropbtn {
-                color: $color-white;
+                color: white;
             }
         }
 
@@ -28,12 +29,13 @@
             width: 100%;
             margin: 1rem 0;
             // color: $color-abbey;
-            color: $color-abbey;
-
             border-style: none;
             cursor: pointer;
-            border-left: 1px solid $color-abbey;
+            border-left: 1px solid #bb5497;
+            // #b07e8d 30%,
+            // #a22577 59%,
             transition: all 0.2s ease-out;
+
             &.ele0 {
                 border-style: none;
             }
@@ -43,9 +45,9 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: calc(3.625rem - 7px);
-            border-top: 7px solid #f9f9f9;
-            background-color: $color-jumbo;
+            top: calc(3.625rem - 4px);
+            border-top: 4px solid #f9f9f9;
+            background-color: rgba(32, 37, 46, 0.1);
             z-index: 2;
             width: 100%;
             transform: scaleY(0);
@@ -65,6 +67,9 @@
                 padding: 12px 16px;
                 text-decoration: none;
                 position: relative;
+                &:hover {
+                    color: white;
+                }
                 hr {
                     position: absolute;
                     bottom: 0;

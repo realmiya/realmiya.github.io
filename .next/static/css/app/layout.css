@@ -7,7 +7,7 @@
   position: relative;
 }
 .dropdown .menu {
-  font-family: "Alegre Sans Regular NC";
+  font-family: "PalmBeach Trial", sans-serif;
   flex: 1 1 0;
   width: 100%;
   border-radius: 0;
@@ -17,18 +17,19 @@
 }
 .dropdown .menu:hover {
   transition: all 0.2s ease-out;
-  background-color: #20252e;
+  background-color: rgba(32, 37, 46, 0.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .dropdown .menu:hover .dropbtn {
-  color: #fff;
+  color: white;
 }
 .dropdown .menu .dropbtn {
   width: 100%;
   margin: 1rem 0;
-  color: #f7f7f7;
   border-style: none;
   cursor: pointer;
-  border-left: 1px solid #f7f7f7;
+  border-left: 1px solid #bb5497;
   transition: all 0.2s ease-out;
 }
 .dropdown .menu .dropbtn.ele0 {
@@ -38,9 +39,9 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: calc(3.625rem - 7px);
-  border-top: 7px solid #f9f9f9;
-  background-color: #20252e;
+  top: calc(3.625rem - 4px);
+  border-top: 4px solid #f9f9f9;
+  background-color: rgba(32, 37, 46, 0.1);
   z-index: 2;
   width: 100%;
   transform: scaleY(0);
@@ -58,6 +59,9 @@
   padding: 12px 16px;
   text-decoration: none;
   position: relative;
+}
+.dropdown .menu .dropdown-content a:hover {
+  color: white;
 }
 .dropdown .menu .dropdown-content a hr {
   position: absolute;
@@ -107,20 +111,31 @@
 }
 .header_header__StNQf .header_navHeader__MKW8t .header_appLogo_letter__eO0Mf {
   margin-left: 15px;
-  font-family: "Alegre Sans Regular NC";
+  font-family: "Lucida Sans Unicode Regular";
   padding: 0 1rem;
   margin: 0;
   color: #f7f7f7;
   font-size: 21px;
   white-space: nowrap;
 }
+.header_header__StNQf .header_navHeader__MKW8t .header_appLogo_container__ep7DH {
+  width: 40%;
+}
+.header_header__StNQf .header_navHeader__MKW8t .header_appLogo_container__ep7DH img {
+  padding-bottom: 10px;
+}
 .header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 {
-  color: red;
   flex: 1 1 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 25px;
+}
+.header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 .header_button__GzMOy {
+  font-family: "PalmBeach Trial", sans-serif;
+  line-height: 1;
+  color: #f7f7f7;
+  padding: 0px 10px 0px 10px;
 }
 .header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 .header_slogan__kmYxZ {
   font-size: 32px;
@@ -145,6 +160,37 @@
 .header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 nav a:link,
 .header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 nav a:hover {
   text-decoration: none;
+}
+.header_header__StNQf .header_download__Dt19c {
+  padding: 140px 25px;
+  font-family: "PalmBeach Trial", sans-serif;
+  color: #f7f7f7;
+}
+.header_header__StNQf .header_download__Dt19c .header_name_logo_style__T13vf {
+  max-width: 290px;
+  padding-bottom: 5px 0;
+}
+.header_header__StNQf .header_download__Dt19c .header_second_line__exY5P {
+  font-size: 14px;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+.header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 300px;
+}
+.header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo button {
+  color: white;
+  background-color: rgba(55, 52, 52, 0.6);
+  padding: 15px 36px;
+  border-radius: 2px;
+  margin-right: 15px;
+}
+.header_header__StNQf .header_download__Dt19c .header_text__u_Dwa {
+  text-align: center;
+  padding: 0 50px;
+  font-family: "Lucida Sans Unicode Regular";
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/layout/Footer/footer.module.scss ***!
@@ -836,6 +882,9 @@ video {
 .flex {
   display: flex;
 }
+.table {
+  display: table;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -879,6 +928,66 @@ video {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lucida Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Regular"), url(/_next/static/media/LSANS.101e6a95.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Italic"), url(/_next/static/media/LSANSI.fae998e5.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Demibold Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Demibold Roman"), url(/_next/static/media/LSANSD.252a9e9f.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Demibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Demibold Italic"), url(/_next/static/media/LSANSDI.56b2c6b3.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Typewriter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Typewriter Regular"), url(/_next/static/media/LTYPE.3619dec0.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Unicode Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Unicode Regular"), url(/_next/static/media/l_10646.335f85a4.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Typewriter Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Typewriter Oblique"), url(/_next/static/media/LTYPEO.4081ddaa.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Typewriter Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Typewriter Bold"), url(/_next/static/media/LTYPEB.862808fa.woff) format("woff");
+}
+@font-face {
+  font-family: "Lucida Sans Typewriter Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lucida Sans Typewriter Bold Oblique"), url(/_next/static/media/LTYPEBO.4f6d60ed.woff) format("woff");
+}
+@font-face {
+  font-family: "PalmBeach Trial";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PalmBeach_Trial.otf"), url(/_next/static/media/PalmBeach_Trial.87c76b80.otf) format("opentype");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -895,26 +1004,51 @@ body .App .wrapper {
 body .App .wrapper .container--fullwidth {
   width: 100%;
   background-color: #20252e;
-  padding: 1.75rem 2rem 0 2rem;
+  padding: 0rem 4rem 0 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
 }
-body .App .wrapper .container--fullwidth.header:before {
+body .App .wrapper .container--fullwidth.header {
+  min-height: 100vh;
+  background-image: url(/_next/static/media/bg1.075d7faa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+body .App .wrapper .container--fullwidth .article-sec {
+  max-width: 1200px;
+  padding: 2rem 4rem;
+  background-color: #f7f7f7;
+}
+body .App .wrapper .dropdown {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+body .App .wrapper .dropdown.main:before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 7px;
-  background: linear-gradient(90deg, #dfe5e7 0, #acd4ef 50%, #0e67af);
+  height: 4px;
+  background: linear-gradient(90deg, #ab9ba6 0, #a65c93 10%, #b07e8d 30%, #a22577 59%, #771755 85%, #3a042a);
 }
-body .App .wrapper .dropdown {
-  padding: 0;
+body .App .wrapper .skill-table tbody {
+  border-collapse: collapse;
+}
+body .App .wrapper .skill-table th {
+  padding: 1.5rem;
+  border: 1px solid;
+}
+body .App .wrapper .skill-table td {
+  border: 1px solid;
+}
+body .App .wrapper .skill-table .skill-ele {
   display: flex;
-  position: relative;
+  justify-content: flex-start;
 }
 .focus\:cursor-text:focus {
   cursor: text;

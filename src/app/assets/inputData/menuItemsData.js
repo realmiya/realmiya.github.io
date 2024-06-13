@@ -13,26 +13,26 @@ export const menuItems = {
             cName: "dropdown-link",
         },
         {
-            title: "ios E-detail",
+            title: "iOS E-detail",
             path: "/works/e-detail",
             cName: "dropdown-link",
         },
 
-        {
-            title: "Data Cleaning",
-            path: "/works/data-cleaning",
-            cName: "dropdown-link",
-        },
-        {
-            title: "Projects Made in Uni",
-            path: "/works/uni-projects",
-            cName: "dropdown-link",
-        },
-        {
-            title: "In Coming...",
-            path: "/",
-            cName: "dropdown-link",
-        },
+        // {
+        //     title: "Data Cleaning",
+        //     path: "/works/data-cleaning",
+        //     cName: "dropdown-link",
+        // },
+        // {
+        //     title: "Projects Made in Uni",
+        //     path: "/works/uni-projects",
+        //     cName: "dropdown-link",
+        // },
+        // {
+        //     title: "In Coming...",
+        //     path: "/",
+        //     cName: "dropdown-link",
+        // },
     ],
     // "My Skills": [
     //     {
@@ -46,14 +46,8 @@ export const menuItems = {
         {
             title: "Inspiration",
             mobileTitle: "Inspiration",
-            path: "/Inspiration",
+            path: "/inspiration",
             cName: "menu-btn",
-        },
-
-        {
-            title: "divide & conquer",
-            path: "/",
-            cName: "dropdown-link",
         },
         {
             title: "recursion",

@@ -47,10 +47,6 @@ const NavMenu = () => {
                 <StyledComponentsRegistry>
                     <SuccessButton
                         color="abbey"
-                        // sx={{
-                        //     color: 'black',
-                        //     borderLeft: 'solid'
-                        // }}
                         id="demo-positioned-button"
                         aria-controls={
                             open ? "demo-positioned-menu" : undefined
@@ -77,21 +73,7 @@ const NavMenu = () => {
                         }}
                     >
                         <MenuItem onClick={handleClose}>who we are</MenuItem>
-                        {/* <MenuItem onClick={handleClose}>
-                        George Weston Foods
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>Sustainability</MenuItem> */}
                     </Menu>
-                    {/* <SuccessButton
-                    color="abbey"
-                    id="demo-positioned-button"
-                    aria-controls={open ? "demo-positioned-menu" : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={open ? "true" : undefined}
-                    onClick={handleClick}
-                >
-                    CONTACT
-                </SuccessButton> */}
                 </StyledComponentsRegistry>
             </div>
         </>

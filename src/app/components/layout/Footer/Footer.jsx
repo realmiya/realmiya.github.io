@@ -14,21 +14,21 @@ export default function Footer() {
                     ></div>
 
                     <div className={styles.right}>
+                        <div className={styles.footer_desc}>LET'S CHAT</div>
+                        <div className={styles.footer_desc}></div>
+                        <div className={styles.footer_desc}>4374357168</div>
                         <div className={styles.footer_desc}>
-                            Tip Top Foodservice is the specialist foodservice
-                            bakery division of George Weston Foods, offering an
-                            extensive product portfolio from some of Australia's
-                            most trusted brands.
+                            miyatungtung@gmail.com
                         </div>
-                        <div className={styles.follow}>Follow us</div>
+                        {/* <div className={styles.follow}>Follow us</div> */}
                     </div>
                 </div>
-                <div className={styles.subscription}>
+                {/* <div className={styles.subscription}>
                     <div className={styles.subscription_header}>
                         Sign up to our monthly newsletter
                     </div>
                     <div className={styles.emailInput}></div>
-                </div>
+                </div> */}
 
                 <div className={styles.footer_column}>
                     {Object.keys(menuItems).map((item, index) => (

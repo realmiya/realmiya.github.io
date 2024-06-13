@@ -7,8 +7,10 @@ import logo from "./name_logo.svg";
 
 import Search from "../../Search/Search.jsx";
 import DropDownButton from "../../DropDownButton/DropDownButton";
-import { navMenuItems } from "../../../assets/inputData/navMenuItemsData.js";
 import { menuItems } from "../../../assets/inputData/menuItemsData.js";
+import { FileTextOutlined } from "@ant-design/icons";
+import { FloatButton } from "antd";
+import { Button, Flex } from "antd";
 
 function Header() {
     return (
@@ -17,25 +19,67 @@ function Header() {
             <header className={styles.header}>
                 <div className={styles.navHeader}>
                     <a href="/">
-                        <div className={styles.appLogo_letter}>Miya Dong</div>
-                        {/* <Image
-                            src={logo}
-                            alt="Logo"
-                            className={styles.appLogo}
-                        /> */}
+                        <div className={styles.appLogo_container}>
+                            {/* <img
+                                src="M-logo.svg"
+                                height="100"
+                                width="100"
+                            ></img> */}
+                            <img src="md/white_md.jpeg"></img>
+                        </div>
                     </a>
                     <div className={styles.rightHeader}>
                         <Search />
-                        <div className="dropdown">
-                            <DropDownButton
-                                menuType="nav"
-                                menuItems={navMenuItems}
-                            />
-                        </div>
+
+                        <a
+                            className={styles.button}
+                            style={{
+                                borderRight: "1px white solid",
+                            }}
+                            href="/about"
+                        >
+                            ABOUT
+                        </a>
+
+                        <a href="/contact" className={styles.button}>
+                            CONTACT
+                        </a>
                     </div>
                 </div>
                 <div className="dropdown main">
                     <DropDownButton menuType="main" menuItems={menuItems} />
+                </div>
+                <div className={styles.download}>
+                    {/* <div className={styles.name_logo_style}>
+                        <img src="md/white_md.jpeg"></img>
+                    </div>
+                    <div className={styles.second_line}>
+                        developer / designer
+                    </div> */}
+                    <div className={styles.text}>
+                        Hi there, I am Miya Dong.
+                        <br></br>I started my career as a full-stack developer
+                        after graduating from UNSW<br></br>with a master's
+                        degree in artificial intelligence.<br></br>I studied and
+                        worked in Sydney from 2020 to 2024, and now I am in
+                        Toronto.
+                    </div>
+                    <div className={styles.btn_set}>
+                        <button>DOWNLOAD RESUME</button>
+                        <button>DOWNLOAD COVER LETTER</button>
+                    </div>
+
+                    {/* <Button>Default Button</Button> */}
+
+                    {/* <FloatButton
+                        icon={<FileTextOutlined />}
+                        description="DOWNLOAD CV"
+                        shape="square"
+                        style={{
+                            width: 120,
+                            right: 24,
+                        }}
+                    /> */}
                 </div>
             </header>
             {/* </div> */}

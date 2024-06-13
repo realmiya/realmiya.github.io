@@ -2,10 +2,13 @@
 @import "../../../assets/styles/global/_mixins.scss";
 .header {
     max-width: 1200px;
-    // margin: 1.75rem 2rem;
-
+    // background-image: url("../../../../../public/bg.jpg");
+    // // margin: 1.75rem 2rem;
+    // object-fit: cover;
+    // min-height: 800px;
     width: 100%;
     // position: relative;
+
     .navHeader {
         height: 102px;
         display: flex;
@@ -17,7 +20,7 @@
         // }
         .appLogo_letter {
             margin-left: 15px;
-            font-family: "Alegre Sans Regular NC";
+            font-family: "Lucida Sans Unicode Regular";
             padding: 0 1rem;
             margin: 0;
             // height: 25px;
@@ -25,22 +28,29 @@
             font-size: 21px;
             white-space: nowrap;
         }
+        .appLogo_container {
+            width: 40%;
 
-        // .appLogo {
-        //     background-image: url(./m_logo_flower.svg);
-        //     background-size: contain;
-        //     background-repeat: no-repeat;
-        //     background-position: center center;
-        // }
+            img {
+                padding-bottom: 10px;
+            }
+        }
 
         .rightHeader {
-            color: red;
+            // color: red;
             flex: 1 1 100%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
 
             height: 25px;
+            .button {
+                // font-family: "Lucida Sans Unicode Regular";
+                font-family: "PalmBeach Trial", sans-serif;
+                line-height: 1;
+                color: $color-abbey;
+                padding: 0px 10px 0px 10px;
+            }
 
             .slogan {
                 font-size: 32px;
@@ -70,6 +80,45 @@
                     text-decoration: none;
                 }
             }
+        }
+    }
+
+    .download {
+        padding: 140px 25px;
+        font-family: "PalmBeach Trial", sans-serif;
+        color: $color-abbey;
+
+        .name_logo_style {
+            max-width: 290px;
+            padding-bottom: 5px 0;
+        }
+
+        .second_line {
+            // font-family: "Montserrat", Arial, serif;
+            // font-family: "Lucida Sans Unicode Regular";
+            font-size: 14px;
+            padding: 30px 0;
+
+            text-transform: uppercase;
+        }
+        .btn_set {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 300px;
+
+            button {
+                color: white;
+
+                background-color: rgb(55, 52, 52, 0.6);
+                padding: 15px 36px;
+                border-radius: 2px;
+                margin-right: 15px;
+            }
+        }
+        .text {
+            text-align: center;
+            padding: 0 50px;
+            font-family: "Lucida Sans Unicode Regular";
         }
     }
 }
