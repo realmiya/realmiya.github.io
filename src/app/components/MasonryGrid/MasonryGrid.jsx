@@ -16,7 +16,7 @@ const MasonryGrid = () => {
         <>
             <div>
                 <Masonry
-                    breakpointCols={4}
+                    breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column"
                 >
@@ -30,12 +30,3 @@ const MasonryGrid = () => {
 };
 
 export default MasonryGrid;
-
-{
-    /* <img
-// key={image.id}
-// alt={image.author}
-src="https://picsum.photos/id/80/3888/2592"
-style={{ display: "block", padding: "8px" }}
-/> */
-}
