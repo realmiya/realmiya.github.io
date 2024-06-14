@@ -5,7 +5,6 @@ import Footer from "./components/layout/Footer/Footer";
 import theme from "./assets/styles/global/_variables.jsx";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Link from "next/link";
-
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -25,7 +24,6 @@ export default function RootLayout({ children }) {
                                     <Header />
                                 </div>
                                 {children}
-
                                 <Footer />
                             </main>
                         </div>

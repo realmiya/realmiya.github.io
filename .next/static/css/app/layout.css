@@ -133,6 +133,7 @@
 }
 .header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 .header_button__GzMOy {
   font-family: "PalmBeach Trial", sans-serif;
+  font-weight: bolder;
   line-height: 1;
   color: #f7f7f7;
   padding: 0px 10px 0px 10px;
@@ -164,6 +165,7 @@
 .header_header__StNQf .header_download__Dt19c {
   padding: 140px 25px;
   font-family: "PalmBeach Trial", sans-serif;
+  font-weight: bolder;
   color: #f7f7f7;
 }
 .header_header__StNQf .header_download__Dt19c .header_name_logo_style__T13vf {
@@ -178,19 +180,31 @@
 .header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo {
   display: flex;
   justify-content: flex-end;
-  padding-top: 300px;
 }
 .header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo button {
   color: white;
-  background-color: rgba(55, 52, 52, 0.6);
+  background-color: rgba(45, 45, 86, 0.4);
   padding: 15px 36px;
   border-radius: 2px;
+}
+.header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo button:first-child {
   margin-right: 15px;
 }
-.header_header__StNQf .header_download__Dt19c .header_text__u_Dwa {
+.header_header__StNQf .header_download__Dt19c .header_text_button__Ho_hh {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+.header_header__StNQf .header_download__Dt19c .header_text_button__Ho_hh .header_text__u_Dwa {
+  font-weight: bolder;
+  font-size: 18px;
   text-align: center;
-  padding: 0 50px;
+  padding: 1.5rem 3.5rem;
   font-family: "Lucida Sans Unicode Regular";
+  background-color: rgba(45, 45, 86, 0.4);
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/layout/Footer/footer.module.scss ***!
@@ -879,17 +893,23 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
-.table {
-  display: table;
+.grid {
+  display: grid;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.flex-row {
+  flex-direction: row;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -995,20 +1015,42 @@ video {
   font-size: 17px;
 }
 
+body .App {
+  min-width: 768px;
+}
 body .App .wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 body .App .wrapper .container--fullwidth {
   width: 100%;
-  background-color: #20252e;
   padding: 0rem 4rem 0 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
+}
+body .App .wrapper .container--fullwidth.grid {
+  /* Style your items */
+}
+body .App .wrapper .container--fullwidth.grid .my-masonry-grid { /* Not needed if autoprefixing */ /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+body .App .wrapper .container--fullwidth.grid .my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+body .App .wrapper .container--fullwidth.grid .my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+body .App .wrapper .container--fullwidth.grey {
+  background-color: #f7f7f7;
 }
 body .App .wrapper .container--fullwidth.header {
   min-height: 100vh;
@@ -1017,9 +1059,16 @@ body .App .wrapper .container--fullwidth.header {
   background-size: 100% 100%;
 }
 body .App .wrapper .container--fullwidth .article-sec {
+  min-height: 100vh;
   max-width: 1200px;
-  padding: 2rem 4rem;
-  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .App .wrapper .second_line {
+  font-size: 15px;
+  text-transform: uppercase;
 }
 body .App .wrapper .dropdown {
   padding: 0;
@@ -1049,6 +1098,81 @@ body .App .wrapper .skill-table td {
 body .App .wrapper .skill-table .skill-ele {
   display: flex;
   justify-content: flex-start;
+}
+body .App .wrapper .name-sec {
+  max-width: 360px;
+  min-width: 160px;
+  padding-bottom: 3rem;
+}
+@media (max-width: 780px) {
+  body .App .wrapper .name-sec {
+    max-width: 260px;
+  }
+}
+body .App .wrapper .flexbox {
+  flex-direction: column;
+  display: flex;
+}
+body .App .wrapper .flexbox.reverse {
+  flex-direction: row;
+}
+@media (max-width: 375px) {
+  body .App .wrapper .flexbox.reverse {
+    flex-direction: column;
+  }
+}
+body .App .wrapper .flexbox .flex-row {
+  padding: 12px 0;
+  display: flex;
+}
+@media (max-width: 375px) {
+  body .App .wrapper .flexbox .flex-row {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+body .App .wrapper .flexbox .flex-row .flexitem {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: flex-start;
+}
+body .App .wrapper .flexbox .flex-row .flexitem .img-container {
+  padding-left: 5px;
+  padding-top: 0.7em;
+}
+body .App .wrapper .flexbox .flex-row .flexitem .img-container img {
+  padding: 0;
+}
+@media (max-width: 780px) {
+  body .App .wrapper .flexbox .flex-row .flexitem .img-container {
+    min-width: 30px;
+  }
+}
+@media (max-width: 375px) {
+  body .App .wrapper .flexbox .flex-row .flexitem .img-container {
+    width: 30px;
+    min-width: 30px;
+    padding-top: 1em;
+  }
+}
+body .App .wrapper .flexbox .flex-row .flexitem .text-container {
+  padding: 5px 35px 5px 12px;
+  line-height: 160%;
+}
+body .App .wrapper .flexbox .flex-row .flexitem .text-container b {
+  font-weight: bold;
+}
+@media (max-width: 780px) {
+  body .App .wrapper .flexbox .flex-row .flexitem .text-container {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  body .App .wrapper .flexbox .flex-row .flexitem .text-container {
+    padding: 10px 16px;
+    line-height: 160%;
+    font-size: 15px;
+  }
 }
 .focus\:cursor-text:focus {
   cursor: text;

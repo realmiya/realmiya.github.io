@@ -111,21 +111,39 @@
 
 body {
     .App {
-        // display: flex;
-        // align-items: center;
-        // width: 100vw;
-        // flex-direction: column;
+        min-width: 768px;
         .wrapper {
-            background-color: $color-white;
+            background-color: #ffffff;
+
             display: flex;
             align-items: center;
             flex-direction: column;
 
             .container--fullwidth {
+                &.grid {
+                    .my-masonry-grid {
+                        display: -webkit-box; /* Not needed if autoprefixing */
+                        display: -ms-flexbox; /* Not needed if autoprefixing */
+                        display: flex;
+                        margin-left: -30px; /* gutter size offset */
+                        width: auto;
+                    }
+                    .my-masonry-grid_column {
+                        padding-left: 30px; /* gutter size */
+                        background-clip: padding-box;
+                    }
+
+                    /* Style your items */
+                    .my-masonry-grid_column > div {
+                        /* change div to reference your elements you put in <Masonry> */
+                        background: grey;
+                        margin-bottom: 30px;
+                    }
+                }
+                &.grey {
+                    background-color: $color-abbey;
+                }
                 width: 100%;
-                // background-color: $color-lightGrey;
-                // background-color: $color-abbey;
-                background-color: $color-dark-black-grey;
                 padding: 0rem 4rem 0 4rem;
 
                 display: flex;
@@ -145,12 +163,30 @@ body {
                 }
 
                 .article-sec {
+                    min-height: 100vh;
                     max-width: 1200px;
 
-                    padding: 2rem 4rem;
-                    background-color: $color-lightGrey;
+                    // padding: 6rem 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    // background-color: $color-lightGrey;
                 }
             }
+
+            .second_line {
+                // font-family: "Montserrat", Arial, serif;
+                // font-family: "Lucida Sans Unicode Regular";
+                font-size: 15px;
+                // padding: 30px 0;
+                // padding-left: 5px;
+
+                text-transform: uppercase;
+                // color: rgb(139, 139, 139);
+            }
+
             .dropdown {
                 padding: 0;
                 display: flex;
@@ -193,6 +229,76 @@ body {
                     // display: flex;
                     display: flex;
                     justify-content: flex-start;
+                }
+            }
+            .name-sec {
+                max-width: 360px;
+                min-width: 160px;
+                @media (max-width: 780px) {
+                    max-width: 260px;
+                }
+
+                padding-bottom: 3rem;
+            }
+            .flexbox {
+                flex-direction: column;
+                display: flex;
+
+                // padding: 0px 13px;
+                // padding-bottom: 18px;
+                &.reverse {
+                    flex-direction: row;
+
+                    @media (max-width: 375px) {
+                        flex-direction: column;
+                    }
+                }
+                .flex-row {
+                    padding: 12px 0;
+                    display: flex;
+                    @media (max-width: 375px) {
+                        flex-direction: column;
+                        padding: 0;
+                    }
+                    .flexitem {
+                        display: flex;
+                        flex: 1 1 50%;
+                        align-items: flex-start;
+                        .img-container {
+                            padding-left: 5px;
+                            padding-top: 0.7em;
+                            img {
+                                // object-fit: none;
+                                padding: 0;
+                                // @media(max-width:375px){
+                                //   object-fit: cover;
+                                // }
+                            }
+                            @media (max-width: 780px) {
+                                min-width: 30px;
+                            }
+                            @media (max-width: 375px) {
+                                width: 30px;
+                                min-width: 30px;
+                                padding-top: 1em;
+                            }
+                        }
+                        .text-container {
+                            b {
+                                font-weight: bold;
+                            }
+                            padding: 5px 35px 5px 12px;
+                            line-height: 160%;
+                            @media (max-width: 780px) {
+                                font-size: 14px;
+                            }
+                            @media (max-width: 375px) {
+                                padding: 10px 16px;
+                                line-height: 160%;
+                                font-size: 15px;
+                            }
+                        }
+                    }
                 }
             }
         }

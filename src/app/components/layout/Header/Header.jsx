@@ -56,17 +56,20 @@ function Header() {
                     <div className={styles.second_line}>
                         developer / designer
                     </div> */}
-                    <div className={styles.text}>
-                        Hi there, I am Miya Dong.
-                        <br></br>I started my career as a full-stack developer
-                        after graduating from UNSW<br></br>with a master's
-                        degree in artificial intelligence.<br></br>I studied and
-                        worked in Sydney from 2020 to 2024, and now I am in
-                        Toronto.
-                    </div>
-                    <div className={styles.btn_set}>
-                        <button>DOWNLOAD RESUME</button>
-                        <button>DOWNLOAD COVER LETTER</button>
+                    <div className={styles.text_button}>
+                        <div className={styles.text}>
+                            Hi there, I am Miya Dong.
+                            <br></br>I started my career as a full-stack
+                            developer after graduating from UNSW<br></br>with a
+                            master's degree in artificial intelligence.<br></br>
+                            I studied and worked in Sydney from 2020 to 2024,
+                            and now I am in Toronto.
+                        </div>
+
+                        <div className={styles.btn_set}>
+                            <button>DOWNLOAD RESUME / CV</button>
+                            <button>DOWNLOAD COVER LETTER</button>
+                        </div>
                     </div>
 
                     {/* <Button>Default Button</Button> */}
