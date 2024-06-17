@@ -126,6 +126,7 @@ body {
             .container__fullwidth {
                 position: relative;
                 &.grid {
+                    width: 90%;
                     max-width: 1200px;
                     padding: 0 !important;
 
@@ -294,12 +295,13 @@ body {
                         }
                         .text_button {
                             width: 90%;
-                            margin: 0 auto;
+                            margin: 0px auto;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
-                            min-height: 50vh;
+                            // min-height: 50vh;
                             .text {
+                                margin: 3rem 0;
                                 // padding: 1rem 0;
                                 font-weight: bolder;
 

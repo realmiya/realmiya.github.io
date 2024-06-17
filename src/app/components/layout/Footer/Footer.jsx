@@ -12,7 +12,7 @@ export default function Footer() {
 
                 <div className={styles.footer_text}>
                     {/* <div className={styles.footer_desc}></div> */}
-                    <div className={styles.footer_desc}>+1 4374357168</div>
+                    <div className={styles.footer_desc}>(+1) 4374357168</div>
                     <div className={styles.footer_desc}>
                         miyatungtung@gmail.com
                     </div>
@@ -21,18 +21,22 @@ export default function Footer() {
                 <div className={styles.footer_column}>
                     {Object.keys(menuItems).map((item, index) => (
                         <div className={styles.columnItem} key={index}>
-                            <div className={styles.columnItem_header}>
-                                {item}
-                            </div>
+                            <a href={menuItems[item][0].path} key={index}>
+                                <div className={styles.columnItem_header}>
+                                    {item}
+                                </div>
+                            </a>
                             {menuItems[item]
                                 .slice(1)
                                 .map((menuitems, menuindex) => (
-                                    <div
-                                        className={styles.columnItem_item}
-                                        key={`${menuindex}`}
-                                    >
-                                        {menuitems.title}
-                                    </div>
+                                    <a href={menuitems.path} key={menuindex}>
+                                        <div
+                                            className={styles.columnItem_item}
+                                            key={menuindex}
+                                        >
+                                            {menuitems.title}
+                                        </div>
+                                    </a>
                                 ))}
                         </div>
                     ))}
