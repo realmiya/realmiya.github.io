@@ -126,7 +126,9 @@ body {
 
                 .top {
                     .download {
-                        padding: 140px 25px;
+                        // width: calc(100% - 8rem);
+                        // max-width: 1200px;
+                        padding: 140px 0px;
                         font-family: "PalmBeach Trial", sans-serif;
                         font-weight: bolder;
                         color: $color-abbey;
@@ -157,7 +159,6 @@ body {
                             }
                         }
                         .text_button {
-                            width: 90%;
                             margin: 0px auto;
                             display: flex;
                             flex-direction: column;
@@ -183,6 +184,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    align-items: center;
                     @media (max-width: 650px) {
                         position: relative;
                     }
