@@ -22,11 +22,11 @@ export default function RootLayout({ children }) {
                             <main className="wrapper">
                                 <div className="container__fullwidth">
                                     <Header />
-                                </div>
-                                {children}
-                                <div className="container__fullwidth">
+                                    {children}
                                     <Footer />
                                 </div>
+                                {/* <div className="container__fullwidth">
+                                </div> */}
                             </main>
                         </div>
                     </ThemeProvider>

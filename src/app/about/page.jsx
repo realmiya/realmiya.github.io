@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutPage = () => {
     return (
         <>
-            <div className="work_sec container__fullwidth blobs header">
+            <div className="work_sec top">
                 <div className="download">
                     <div className="text_button">
                         <div className="text">

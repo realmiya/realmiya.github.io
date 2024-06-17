@@ -3,12 +3,14 @@ import Banner from "../components/Banner/Banner";
 const page = () => {
     return (
         <>
-            <div className="container__fullwidth header">
+            <div className="top">
                 <div
                     className="banner_container"
-                    style={{
-                        paddingTop: "230px !important",
-                    }}
+                    style={
+                        {
+                            // paddingTop: "230px !important",
+                        }
+                    }
                 >
                     <Banner name="Coming Soon..." desc="under construction" />
                 </div>

@@ -59,12 +59,12 @@ function Header() {
                                 height="100"
                                 width="100"
                             > */}
-                            <Image
+                            {/* <Image
                                 // src="/md/white_md.jpeg"
                                 src="/vercel.svg"
                                 fill
                                 alt="M-logo"
-                            />
+                            /> */}
                         </div>
                     </a>
                     {/* <div className="dropdown main"> */}

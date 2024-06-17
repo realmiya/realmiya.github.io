@@ -169,50 +169,6 @@
 .header_header__StNQf .header_navHeader__MKW8t .header_rightHeader__gErJ3 nav a:hover {
   text-decoration: none;
 }
-.header_header__StNQf .header_download__Dt19c {
-  padding: 140px 25px;
-  font-family: "PalmBeach Trial", sans-serif;
-  font-weight: bolder;
-  color: #f7f7f7;
-}
-.header_header__StNQf .header_download__Dt19c .header_name_logo_style__T13vf {
-  max-width: 290px;
-  padding-bottom: 5px 0;
-}
-.header_header__StNQf .header_download__Dt19c .header_second_line__exY5P {
-  font-size: 14px;
-  padding: 30px 0;
-  text-transform: uppercase;
-}
-.header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo {
-  display: flex;
-  justify-content: flex-end;
-}
-.header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo button {
-  color: white;
-  background-color: rgba(45, 45, 86, 0.4);
-  padding: 15px 36px;
-  border-radius: 2px;
-}
-.header_header__StNQf .header_download__Dt19c .header_btn_set__dsUuo button:first-child {
-  margin-right: 15px;
-}
-.header_header__StNQf .header_download__Dt19c .header_text_button__Ho_hh {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 50vh;
-}
-.header_header__StNQf .header_download__Dt19c .header_text_button__Ho_hh .header_text__u_Dwa {
-  font-weight: bolder;
-  font-size: 18px;
-  text-align: center;
-  padding: 1.5rem 3.5rem;
-  font-family: "Lucida Sans Unicode Regular";
-  background-color: rgba(45, 45, 86, 0.4);
-}
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/layout/Footer/footer.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -220,7 +176,6 @@
   font-family: "Montserrat", Arial, serif;
   width: 100%;
   max-width: 1200px;
-  padding: 0 2rem 1.75rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,7 +207,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/Banner/banner.module.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .banner_banner_sec__6emzY {
-  padding: 8rem 0 2rem 0;
+  padding: 6rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1108,36 +1063,183 @@ body .App .wrapper .container__fullwidth {
   flex-direction: column;
   position: relative;
 }
-body .App .wrapper .container__fullwidth.grid {
+body .App .wrapper .container__fullwidth .top {
+  position: relative;
+  width: calc(100% + 8rem);
+  min-height: 100vh;
+  background-image: url(/_next/static/media/bg1.075d7faa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .App .wrapper .container__fullwidth .top .download {
+  padding: 140px 25px;
+  font-family: "PalmBeach Trial", sans-serif;
+  font-weight: bolder;
+  color: #f7f7f7;
+}
+body .App .wrapper .container__fullwidth .top .download .name_logo_style {
+  max-width: 290px;
+  padding-bottom: 5px 0;
+}
+body .App .wrapper .container__fullwidth .top .download .btn_set {
+  display: flex;
+  justify-content: flex-end;
+}
+body .App .wrapper .container__fullwidth .top .download .btn_set button {
+  color: white;
+  background-color: rgba(45, 45, 86, 0.4);
+  padding: 15px 36px;
+  border-radius: 2px;
+}
+body .App .wrapper .container__fullwidth .top .download .btn_set button:first-child {
+  margin-right: 15px;
+}
+body .App .wrapper .container__fullwidth .top .download .text_button {
   width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .App .wrapper .container__fullwidth .top .download .text_button .text {
+  margin: 3rem 0;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  padding: 1.5rem 3.5rem;
+  font-family: "Lucida Sans Unicode Regular";
+  background-color: rgba(45, 45, 86, 0.4);
+}
+@media (max-width: 650px) {
+  body .App .wrapper .container__fullwidth .top {
+    position: relative;
+  }
+}
+body .App .wrapper .container__fullwidth .article-sec {
+  min-height: 100vh;
+  max-width: 1200px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .App .wrapper .container__fullwidth .article-sec .name-sec {
+  padding-bottom: 3rem;
+}
+body .App .wrapper .container__fullwidth .article-sec .name-sec .second_line {
+  font-size: 14px;
+  color: rgb(177, 177, 177);
+  text-transform: uppercase;
+}
+body .App .wrapper .container__fullwidth .article-sec .name-sec .md-container {
+  position: relative;
+  width: 360px;
+  height: 70px;
+}
+@media (max-width: 780px) {
+  body .App .wrapper .container__fullwidth .article-sec .name-sec .md-container {
+    max-width: 260px;
+  }
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox {
+  flex-direction: column;
+  display: flex;
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox.reverse {
+  flex-direction: row;
+}
+@media (max-width: 375px) {
+  body .App .wrapper .container__fullwidth .article-sec .flexbox.reverse {
+    flex-direction: column;
+  }
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row {
+  padding: 12px 0;
+  display: flex;
+}
+@media (max-width: 375px) {
+  body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: flex-start;
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .img-container {
+  padding-left: 5px;
+  padding-top: 0.7em;
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .img-container img {
+  padding: 0;
+}
+@media (max-width: 780px) {
+  body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .img-container {
+    min-width: 30px;
+  }
+}
+@media (max-width: 375px) {
+  body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .img-container {
+    width: 30px;
+    min-width: 30px;
+    padding-top: 1em;
+  }
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .text-container {
+  padding: 5px 35px 5px 12px;
+  line-height: 160%;
+}
+body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .text-container b {
+  font-weight: bold;
+}
+@media (max-width: 780px) {
+  body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .text-container {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  body .App .wrapper .container__fullwidth .article-sec .flexbox .flex-row .flexitem .text-container {
+    padding: 10px 16px;
+    line-height: 160%;
+    font-size: 15px;
+  }
+}
+body .App .wrapper .container__fullwidth .grid {
   max-width: 1200px;
   padding: 0 !important;
 }
-body .App .wrapper .container__fullwidth.grid .my-masonry-grid { /* Not needed if autoprefixing */ /* Not needed if autoprefixing */
+body .App .wrapper .container__fullwidth .grid .my-masonry-grid { /* Not needed if autoprefixing */ /* Not needed if autoprefixing */
   display: flex;
   margin-left: -30px; /* gutter size offset */
   width: auto;
 }
-body .App .wrapper .container__fullwidth.grid .my-masonry-grid_column {
+body .App .wrapper .container__fullwidth .grid .my-masonry-grid_column {
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
 }
-body .App .wrapper .container__fullwidth.grid .my-masonry-grid_column img {
+body .App .wrapper .container__fullwidth .grid .my-masonry-grid_column img {
   padding: 15px 0;
 }
 body .App .wrapper .container__fullwidth.grey {
   background-color: #f7f7f7;
 }
-body .App .wrapper .container__fullwidth.work_sec {
+body .App .wrapper .container__fullwidth .work_sec {
+  width: calc(100% + 8rem);
   position: relative;
   overflow: hidden;
   background-color: #000;
   min-height: 100vh;
 }
-body .App .wrapper .container__fullwidth.work_sec .timeline_container {
+body .App .wrapper .container__fullwidth .work_sec .timeline_container {
   padding: 225px 0 100px 0;
 }
-body .App .wrapper .container__fullwidth.work_sec .timeline_container .first-line {
+body .App .wrapper .container__fullwidth .work_sec .timeline_container .first-line {
   display: flex;
   justify-content: space-between;
 }
@@ -1189,82 +1291,6 @@ body .App .wrapper .container__fullwidth .blobs .blob-green {
   height: 711px;
   flex-shrink: 0;
 }
-body .App .wrapper .container__fullwidth.header {
-  min-height: 100vh;
-  background-image: url(/_next/static/media/bg1.075d7faa.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (max-width: 650px) {
-  body .App .wrapper .container__fullwidth.header {
-    position: relative;
-  }
-}
-body .App .wrapper .container__fullwidth.header .download {
-  font-family: "PalmBeach Trial", sans-serif;
-  font-weight: bolder;
-  color: #f7f7f7;
-}
-@media (max-width: 750px) {
-  body .App .wrapper .container__fullwidth.header .download {
-    position: absolute;
-    top: 180px;
-  }
-}
-body .App .wrapper .container__fullwidth.header .download .name_logo_style {
-  max-width: 290px;
-  padding-bottom: 5px 0;
-}
-body .App .wrapper .container__fullwidth.header .download .second_line {
-  font-size: 14px;
-  padding: 30px 0;
-  text-transform: uppercase;
-}
-body .App .wrapper .container__fullwidth.header .download .btn_set {
-  display: flex;
-  justify-content: flex-end;
-}
-body .App .wrapper .container__fullwidth.header .download .btn_set button {
-  color: white;
-  background-color: rgba(45, 45, 86, 0.4);
-  padding: 15px 36px;
-  border-radius: 2px;
-}
-body .App .wrapper .container__fullwidth.header .download .btn_set button:first-child {
-  margin-right: 15px;
-}
-body .App .wrapper .container__fullwidth.header .download .text_button {
-  width: 90%;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-body .App .wrapper .container__fullwidth.header .download .text_button .text {
-  margin: 3rem 0;
-  font-weight: bolder;
-  font-size: 18px;
-  text-align: center;
-  padding: 1.5rem 3.5rem;
-  font-family: "Lucida Sans Unicode Regular";
-  background-color: rgba(45, 45, 86, 0.4);
-}
-body .App .wrapper .container__fullwidth .article-sec {
-  min-height: 100vh;
-  max-width: 1200px;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .App .wrapper .second_line {
-  font-size: 15px;
-  text-transform: uppercase;
-}
 body .App .wrapper .dropdown {
   padding: 0;
   display: flex;
@@ -1280,103 +1306,9 @@ body .App .wrapper .dropdown.main:before {
   height: 4px;
   background: linear-gradient(90deg, #ab9ba6 0, #a65c93 10%, #b07e8d 30%, #a22577 59%, #771755 85%, #3a042a);
 }
-body .App .wrapper .skill-table tbody {
-  border-collapse: collapse;
-}
-body .App .wrapper .skill-table th {
-  padding: 1.5rem;
-  border: 1px solid;
-}
-body .App .wrapper .skill-table td {
-  border: 1px solid;
-}
-body .App .wrapper .skill-table .skill-ele {
-  display: flex;
-  justify-content: flex-start;
-}
-body .App .wrapper .name-sec {
-  padding-bottom: 3rem;
-}
-body .App .wrapper .name-sec .md-container {
-  position: relative;
-  width: 360px;
-  height: 70px;
-}
-@media (max-width: 780px) {
-  body .App .wrapper .name-sec .md-container {
-    max-width: 260px;
-  }
-}
-body .App .wrapper .flexbox {
-  flex-direction: column;
-  display: flex;
-}
-body .App .wrapper .flexbox.reverse {
-  flex-direction: row;
-}
-@media (max-width: 375px) {
-  body .App .wrapper .flexbox.reverse {
-    flex-direction: column;
-  }
-}
-body .App .wrapper .flexbox .flex-row {
-  padding: 12px 0;
-  display: flex;
-}
-@media (max-width: 375px) {
-  body .App .wrapper .flexbox .flex-row {
-    flex-direction: column;
-    padding: 0;
-  }
-}
-body .App .wrapper .flexbox .flex-row .flexitem {
-  display: flex;
-  flex: 1 1 50%;
-  align-items: flex-start;
-}
-body .App .wrapper .flexbox .flex-row .flexitem .img-container {
-  padding-left: 5px;
-  padding-top: 0.7em;
-}
-body .App .wrapper .flexbox .flex-row .flexitem .img-container img {
-  padding: 0;
-}
-@media (max-width: 780px) {
-  body .App .wrapper .flexbox .flex-row .flexitem .img-container {
-    min-width: 30px;
-  }
-}
-@media (max-width: 375px) {
-  body .App .wrapper .flexbox .flex-row .flexitem .img-container {
-    width: 30px;
-    min-width: 30px;
-    padding-top: 1em;
-  }
-}
-body .App .wrapper .flexbox .flex-row .flexitem .text-container {
-  padding: 5px 35px 5px 12px;
-  line-height: 160%;
-}
-body .App .wrapper .flexbox .flex-row .flexitem .text-container b {
-  font-weight: bold;
-}
-@media (max-width: 780px) {
-  body .App .wrapper .flexbox .flex-row .flexitem .text-container {
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  body .App .wrapper .flexbox .flex-row .flexitem .text-container {
-    padding: 10px 16px;
-    line-height: 160%;
-    font-size: 15px;
-  }
-}
 
 .ribbon {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  width: calc(100% + 8rem);
   background: #80c0e8;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U0NmUyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y5YTUxYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmRkMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: linear-gradient(to right, #b2e2ea 0%, #77a5e5 50%, #2858b2 100%);

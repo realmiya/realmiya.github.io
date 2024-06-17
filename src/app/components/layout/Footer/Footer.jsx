@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <>
             <footer className={styles.footer} id="footer">
-                <div className="ribbon" style={{ width: "100%" }}></div>
+                <div className="ribbon"></div>
                 <Banner name="LET'S CHAT" desc="or drop me a message" />
 
                 <div className={styles.footer_text}>

@@ -4,7 +4,7 @@ import { projects } from "./projects";
 const page = () => {
     return (
         <>
-            <div className="work_sec container__fullwidth">
+            <div className="work_sec">
                 <div className="blobs">
                     <div className="blob blob-pink" />
                     <div className="blob blob-green" />
