@@ -20,11 +20,13 @@ export default function RootLayout({ children }) {
                     <ThemeProvider theme={theme}>
                         <div className="App">
                             <main className="wrapper">
-                                <div className="container--fullwidth  header">
+                                <div className="container__fullwidth">
                                     <Header />
                                 </div>
                                 {children}
-                                <Footer />
+                                <div className="container__fullwidth">
+                                    <Footer />
+                                </div>
                             </main>
                         </div>
                     </ThemeProvider>

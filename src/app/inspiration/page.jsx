@@ -1,13 +1,26 @@
 import Carousel from "../components/Carousel/Carousel";
 import { carouselImageData } from "../assets/inputData/carouselImage";
-
+import "./inspiration.scss";
 const InspirationPage = () => {
     return (
-        <div>
-            <Carousel data={carouselImageData} />
-
-            <h1 class>InspirationPageg</h1>
-        </div>
+        <>
+            <div
+                className="container__fullwidth work_sec"
+                // style={{
+                //     display: "flex",
+                //     flexDirection: "column",
+                //     justifyContent: "center",
+                // }}
+            >
+                <div className="blobs">
+                    <div className="blob blob-pink" />
+                    <div className="blob blob-green" />
+                </div>
+                <div className="carousel_container">
+                    <Carousel data={carouselImageData} />
+                </div>
+            </div>
+        </>
     );
 };
 export default InspirationPage;

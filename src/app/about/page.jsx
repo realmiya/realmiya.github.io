@@ -1,31 +1,34 @@
 import React from "react";
-import styles from "./about.module.scss";
+// import styles from "./about.module.scss";
+import Image from "next/image";
 const AboutPage = () => {
     return (
-        <div>
-            <div className={styles.download}>
-                <div className={styles.name_logo_style}>
-                    <img src="md/white_md.jpeg"></img>
+        <>
+            <div className="work_sec container__fullwidth blobs header">
+                <div className="download">
+                    <div className="text_button">
+                        <div className="text">
+                            Hi there, I am Miya Dong.
+                            <br></br>I started my career as a full-stack
+                            developer after graduating from UNSW<br></br>with a
+                            Master's Degree in Artificial Intelligence.<br></br>
+                            I studied and worked in Sydney from 2020 to 2024,
+                            and now I am in Toronto.
+                        </div>
+                        <div className="btn_set">
+                            <a
+                                href="/Resume_miyadong_ca.pdf"
+                                download="cv"
+                                target="_blank"
+                            >
+                                <button>DOWNLOAD RESUME / CV</button>
+                            </a>
+                            <button>DOWNLOAD COVER LETTER</button>
+                        </div>
+                    </div>
                 </div>
-                <div className={styles.second_line}>developer / designer</div>
-                <div className={styles.btn_set}>
-                    <button>DOWNLOAD RESUME</button>
-                    <button>DOWNLOAD COVER LETTER</button>
-                </div>
-
-                {/* <Button>Default Button</Button> */}
-
-                {/* <FloatButton
-                        icon={<FileTextOutlined />}
-                        description="DOWNLOAD CV"
-                        shape="square"
-                        style={{
-                            width: 120,
-                            right: 24,
-                        }}
-                    /> */}
             </div>
-        </div>
+        </>
     );
 };
 export default AboutPage;

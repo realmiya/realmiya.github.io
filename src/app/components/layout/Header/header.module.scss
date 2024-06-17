@@ -1,13 +1,26 @@
 @import "../../../assets/styles/global/_variables.scss";
 @import "../../../assets/styles/global/_mixins.scss";
+.small-header {
+    display: none;
+
+    @media screen and (max-width: 600px) {
+        // display: block;
+    }
+}
 .header {
+    @media screen and (max-width: 600px) {
+        // display: none;
+    }
+
     max-width: 1200px;
     // background-image: url("../../../../../public/bg.jpg");
     // // margin: 1.75rem 2rem;
     // object-fit: cover;
     // min-height: 800px;
     width: 100%;
-    // position: relative;
+    // position: fixed;
+    position: absolute;
+    z-index: 10;
 
     .navHeader {
         height: 102px;
@@ -29,7 +42,9 @@
             white-space: nowrap;
         }
         .appLogo_container {
-            width: 40%;
+            position: relative;
+            width: 45px;
+            height: 45px;
 
             img {
                 padding-bottom: 10px;

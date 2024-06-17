@@ -3,20 +3,21 @@ export const menuItems = {
         {
             title: "My Works",
             mobileTitle: "Works",
-            path: "/works/all",
+            path: "/works",
             cName: "menu-btn",
         },
 
         {
-            title: "Web Pages",
-            path: "/works/web-pages",
+            title: "Projects",
+            path: "/works/projects",
             cName: "dropdown-link",
         },
-        {
-            title: "iOS E-detail",
-            path: "/works/e-detail",
-            cName: "dropdown-link",
-        },
+        // ,
+        // {
+        //     title: "iOS E-detail",
+        //     path: "/works/e-detail",
+        //     cName: "dropdown-link",
+        // },
 
         // {
         //     title: "Data Cleaning",
@@ -54,35 +55,31 @@ export const menuItems = {
             path: "/",
             cName: "dropdown-link",
         },
-
-        {
-            title: "dynamic programming",
-            path: "/",
-            cName: "dropdown-link",
-        },
+        // ,
+        // {
+        //     title: "dynamic programming",
+        //     path: "/",
+        //     cName: "dropdown-link",
+        // },
     ],
     Blog: [
         {
             title: "Blog",
             mobileTitle: "Blog",
-            path: "/Blog",
+            path: "/blog",
             cName: "menu-btn",
         },
-
-        {
-            title: "tree",
-            path: "/",
-            cName: "dropdown-link",
-        },
-        {
-            title: "graph",
-            path: "/",
-            cName: "dropdown-link",
-        },
-        {
-            title: "trie",
-            path: "/",
-            cName: "dropdown-link",
-        },
+        // ,
+        // {
+        //     title: "tree",
+        //     path: "/",
+        //     cName: "dropdown-link",
+        // },
+        // ,
+        // {
+        //     title: "graph",
+        //     path: "/",
+        //     cName: "dropdown-link",
+        // },
     ],
 };

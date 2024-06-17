@@ -1,26 +1,48 @@
 import "./globals.scss";
-
-import Brands from "./components/Brands/Brands";
 import Banner from "./components/Banner/Banner";
 import { GoCodeReview } from "react-icons/go";
 import { GoCodespaces } from "react-icons/go";
 import { GoMortarBoard } from "react-icons/go";
 import { GoLightBulb } from "react-icons/go";
 import MasonryGrid from "./components/MasonryGrid/MasonryGrid";
-import { grid_images } from "./assets/inputData/gridData";
-
-// import { useEffect, useState } from "react";
-
-// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Image from "next/image";
 
 function App() {
     return (
         <>
-            <div className="container--fullwidth">
+            <div className="container__fullwidth header">
+                <div className="download">
+                    <div className="text_button">
+                        <div className="text">
+                            Hi there, I am Miya Dong.
+                            <br></br>I started my career as a full-stack
+                            developer after graduating from UNSW<br></br>with a
+                            Master's Degree in Artificial Intelligence.<br></br>
+                            I studied and worked in Sydney from 2020 to 2024,
+                            and now I am in Toronto.
+                        </div>
+
+                        <div className="btn_set">
+                            <a
+                                href="/Resume_miyadong_ca.pdf"
+                                download="cv"
+                                target="_blank"
+                            >
+                                <button>DOWNLOAD RESUME / CV</button>
+                            </a>
+                            <button>DOWNLOAD COVER LETTER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container__fullwidth">
+                <div className="ribbon"></div>
+
                 <div className="article-sec">
                     <div className="name-sec">
-                        <img src="md/md.jpg"></img>
-
+                        <div className="md-container">
+                            <Image src="/md/md.jpg" fill alt="md" />
+                        </div>
                         <div className="second_line">developer/ designer</div>
                     </div>
 
@@ -80,16 +102,12 @@ function App() {
                     </div>
                 </div>
             </div>
-            {/* <div className="container--fullwidth ">
-                <Brands />
-            </div> */}
-            <div className="container--fullwidth">
-                <Banner
-                    name="WORK"
-                    // desc="Hand-picked baked goods that we think you’ll love."
-                />
+
+            <div className="container__fullwidth">
+                <div className="ribbon"></div>
+                <Banner name="WORK" desc="some works I made" />
             </div>
-            <div className="container--fullwidth grid">
+            <div className="container__fullwidth grid">
                 <MasonryGrid />
             </div>
         </>

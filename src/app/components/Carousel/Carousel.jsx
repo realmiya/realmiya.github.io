@@ -4,6 +4,7 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import styles from "./carousel.module.scss";
 import classNames from "classnames/bind";
+import Image from "next/image";
 let cx = classNames.bind(styles);
 
 const Carousel = (props) => {
@@ -58,6 +59,7 @@ const Carousel = (props) => {
                         <img
                             src={image.imgURL}
                             alt={image.label}
+                            fill
                             key={idx}
                             loading="lazy"
                             onTransitionEnd={handleTransitionEnd}

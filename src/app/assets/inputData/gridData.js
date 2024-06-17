@@ -5,7 +5,7 @@ export const grid_images = [
         width: 3888,
         height: 2592,
         url: "https://unsplash.com/photos/Y2PYfopoz-k",
-        download_url: "./grid-image/buvidal/camurus.webp",
+        download_url: "/./grid-image/buvidal/camurus.webp",
     },
     {
         id: "81",
@@ -13,7 +13,7 @@ export const grid_images = [
         width: 5000,
         height: 3250,
         url: "https://unsplash.com/photos/rlxZqmc6D_I",
-        download_url: "./grid-image/buvidal/experience.webp",
+        download_url: "/grid-image/buvidal/experience.webp",
     },
     {
         id: "82",
@@ -21,7 +21,7 @@ export const grid_images = [
         width: 1500,
         height: 997,
         url: "https://unsplash.com/photos/-vq7mi4oF0s",
-        download_url: "./grid-image/buvidal/home.webp",
+        download_url: "/grid-image/buvidal/home.webp",
     },
     {
         id: "83",
@@ -29,7 +29,7 @@ export const grid_images = [
         width: 2560,
         height: 1920,
         url: "https://unsplash.com/photos/dYshDcTI1Js",
-        download_url: "./grid-image/c-a-c/eventfilter.webp",
+        download_url: "/grid-image/c-a-c/eventfilter.webp",
     },
     {
         id: "84",
@@ -37,7 +37,7 @@ export const grid_images = [
         width: 1280,
         height: 848,
         url: "https://unsplash.com/photos/63qfL0TciY8",
-        download_url: "./grid-image/c-a-c/orange.webp",
+        download_url: "/grid-image/c-a-c/orange.webp",
     },
     {
         id: "85",
@@ -45,7 +45,7 @@ export const grid_images = [
         width: 1280,
         height: 774,
         url: "https://unsplash.com/photos/xDrxJCdedcI",
-        download_url: "./grid-image/c-a-c/show.webp",
+        download_url: "/grid-image/c-a-c/show.webp",
     },
     {
         id: "87",
@@ -53,7 +53,7 @@ export const grid_images = [
         width: 1280,
         height: 960,
         url: "https://unsplash.com/photos/o697BgRH_-M",
-        download_url: "./grid-image/cwk/1.webp",
+        download_url: "/grid-image/cwk/1.webp",
     },
     {
         id: "88",
@@ -61,7 +61,7 @@ export const grid_images = [
         width: 1280,
         height: 1707,
         url: "https://unsplash.com/photos/muC_6gTMLR4",
-        download_url: "./grid-image/cwk/2.webp",
+        download_url: "/grid-image/cwk/2.webp",
     },
     {
         id: "89",
@@ -69,7 +69,7 @@ export const grid_images = [
         width: 4608,
         height: 2592,
         url: "https://unsplash.com/photos/rsJtMXn3p_c",
-        download_url: "./grid-image/cwk/3.webp",
+        download_url: "/grid-image/cwk/3.webp",
     },
     {
         id: "90",
@@ -77,7 +77,7 @@ export const grid_images = [
         width: 3000,
         height: 1992,
         url: "https://unsplash.com/photos/qVj3KuEikvg",
-        download_url: "./grid-image/cxtx/split-tile.webp",
+        download_url: "/grid-image/cxtx/split-tile.webp",
     },
     {
         id: "91",
@@ -85,7 +85,7 @@ export const grid_images = [
         width: 3504,
         height: 2336,
         url: "https://unsplash.com/photos/baRYCsjO6z4",
-        download_url: "./grid-image/cxtx/home.webp",
+        download_url: "/grid-image/cxtx/home.webp",
     },
     {
         id: "92",
@@ -93,7 +93,7 @@ export const grid_images = [
         width: 3568,
         height: 2368,
         url: "https://unsplash.com/photos/QxkBP3A9XmU",
-        download_url: "./grid-image/edetail/1.webp",
+        download_url: "/grid-image/edetail/1.webp",
     },
     {
         id: "93",
@@ -101,7 +101,7 @@ export const grid_images = [
         width: 2000,
         height: 1334,
         url: "https://unsplash.com/photos/r1XwWjI4PyE",
-        download_url: "./grid-image/edetail/2.webp",
+        download_url: "/grid-image/edetail/2.webp",
     },
     {
         id: "94",
@@ -109,7 +109,7 @@ export const grid_images = [
         width: 2133,
         height: 1200,
         url: "https://unsplash.com/photos/4yzPVohNuVI",
-        download_url: "./grid-image/edetail/3.webp",
+        download_url: "/grid-image/edetail/3.webp",
     },
     {
         id: "95",
@@ -117,7 +117,7 @@ export const grid_images = [
         width: 2048,
         height: 2048,
         url: "https://unsplash.com/photos/87TJNWkepvI",
-        download_url: "./grid-image/edetail/4.webp",
+        download_url: "/grid-image/edetail/4.webp",
     },
     {
         id: "96",
@@ -125,7 +125,7 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/edetail/5.webp",
+        download_url: "/grid-image/edetail/5.webp",
     },
     {
         id: "97",
@@ -133,7 +133,7 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/edetail/6.webp",
+        download_url: "/grid-image/edetail/6.webp",
     },
     {
         id: "98",
@@ -141,7 +141,7 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/1.webp",
+        download_url: "/grid-image/limbic/1.webp",
     },
     {
         id: "99",
@@ -149,7 +149,7 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/2.webp",
+        download_url: "/grid-image/limbic/2.webp",
     },
     {
         id: "100",
@@ -157,7 +157,7 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/3.webp",
+        download_url: "/grid-image/limbic/3.webp",
     },
     {
         id: "101",
@@ -165,39 +165,16 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/4.webp",
+        download_url: "/grid-image/limbic/4.webp",
     },
-    {
-        id: "102",
-        author: "Pawel Kadysz",
-        width: 4752,
-        height: 3168,
-        url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/5.webp",
-    },
+
     {
         id: "103",
         author: "Pawel Kadysz",
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/6.webp",
-    },
-    {
-        id: "104",
-        author: "Pawel Kadysz",
-        width: 4752,
-        height: 3168,
-        url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/7.webp",
-    },
-    {
-        id: "105",
-        author: "Pawel Kadysz",
-        width: 4752,
-        height: 3168,
-        url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/8.webp",
+        download_url: "/grid-image/limbic/6.webp",
     },
     {
         id: "106",
@@ -205,15 +182,25 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/limbic/9.webp",
+        download_url: "/grid-image/limbic/9.webp",
     },
+
     {
-        id: "107",
+        id: "105",
         author: "Pawel Kadysz",
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/shout/full.webp",
+        download_url: "/grid-image/limbic/8.webp",
+    },
+
+    {
+        id: "104",
+        author: "Pawel Kadysz",
+        width: 4752,
+        height: 3168,
+        url: "https://unsplash.com/photos/CuFYW1c97w8",
+        download_url: "/grid-image/limbic/7.webp",
     },
     {
         id: "108",
@@ -221,15 +208,47 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/shout/timetable.webp",
+        download_url: "/grid-image/shout/timetable.webp",
     },
     {
-        id: "109",
+        id: "102",
         author: "Pawel Kadysz",
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/successfulway/home.webp",
+        download_url: "/grid-image/limbic/5.webp",
+    },
+    {
+        id: "107",
+        author: "Pawel Kadysz",
+        width: 4752,
+        height: 3168,
+        url: "https://unsplash.com/photos/CuFYW1c97w8",
+        download_url: "/grid-image/shout/full.webp",
+    },
+    // {
+    //     id: "109-1",
+    //     author: "Pawel Kadysz",
+    //     width: 4752,
+    //     height: 3168,
+    //     url: "https://unsplash.com/photos/CuFYW1c97w8",
+    //     download_url: "./grid-image/successfulway/1.webp",
+    // },
+    {
+        id: "109-2",
+        author: "Pawel Kadysz",
+        width: 4752,
+        height: 3168,
+        url: "https://unsplash.com/photos/CuFYW1c97w8",
+        download_url: "/grid-image/successfulway/2.webp",
+    },
+    {
+        id: "109-3",
+        author: "Pawel Kadysz",
+        width: 4752,
+        height: 3168,
+        url: "https://unsplash.com/photos/CuFYW1c97w8",
+        download_url: "/grid-image/successfulway/3.webp",
     },
     {
         id: "110",
@@ -237,6 +256,6 @@ export const grid_images = [
         width: 4752,
         height: 3168,
         url: "https://unsplash.com/photos/CuFYW1c97w8",
-        download_url: "./grid-image/successfulway/page.webp",
+        download_url: "/grid-image/successfulway/page.webp",
     },
 ];

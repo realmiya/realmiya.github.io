@@ -1,34 +1,22 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import { menuItems } from "../../../assets/inputData/menuItemsData";
+import Banner from "../../Banner/Banner";
 
 export default function Footer() {
     return (
         <>
-            <footer className={styles.footer}>
-                <div className={styles.ribbon}></div>
-                <div className={styles.brand_intro}>
-                    <div
-                        className={styles.footer_Logo}
-                        href="//www.tiptop-foodservice.com.au/"
-                    ></div>
+            <footer className={styles.footer} id="footer">
+                <div className="ribbon" style={{ width: "100%" }}></div>
+                <Banner name="LET'S CHAT" desc="or drop me a message" />
 
-                    <div className={styles.right}>
-                        <div className={styles.footer_desc}>LET'S CHAT</div>
-                        <div className={styles.footer_desc}></div>
-                        <div className={styles.footer_desc}>4374357168</div>
-                        <div className={styles.footer_desc}>
-                            miyatungtung@gmail.com
-                        </div>
-                        {/* <div className={styles.follow}>Follow us</div> */}
+                <div className={styles.footer_text}>
+                    {/* <div className={styles.footer_desc}></div> */}
+                    <div className={styles.footer_desc}>+1 4374357168</div>
+                    <div className={styles.footer_desc}>
+                        miyatungtung@gmail.com
                     </div>
                 </div>
-                {/* <div className={styles.subscription}>
-                    <div className={styles.subscription_header}>
-                        Sign up to our monthly newsletter
-                    </div>
-                    <div className={styles.emailInput}></div>
-                </div> */}
 
                 <div className={styles.footer_column}>
                     {Object.keys(menuItems).map((item, index) => (
