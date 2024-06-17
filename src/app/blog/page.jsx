@@ -4,14 +4,7 @@ const page = () => {
     return (
         <>
             <div className="top">
-                <div
-                    className="banner_container"
-                    style={
-                        {
-                            // paddingTop: "230px !important",
-                        }
-                    }
-                >
+                <div className="banner_container">
                     <Banner name="Coming Soon..." desc="under construction" />
                 </div>
             </div>

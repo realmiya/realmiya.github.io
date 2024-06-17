@@ -11,7 +11,6 @@ export default function Footer() {
                 <Banner name="LET'S CHAT" desc="or drop me a message" />
 
                 <div className={styles.footer_text}>
-                    {/* <div className={styles.footer_desc}></div> */}
                     <div className={styles.footer_desc}>(+1) 4374357168</div>
                     <div className={styles.footer_desc}>
                         miyatungtung@gmail.com

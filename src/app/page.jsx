@@ -11,7 +11,6 @@ function App() {
     return (
         <>
             <div className="top">
-                {/* <div className="container__fullwidth"> */}
                 <div className="download">
                     <div className="text_button">
                         <div className="text">
@@ -36,10 +35,6 @@ function App() {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
-
-            {/* </div> */}
-            {/* <div className="container__fullwidth"> */}
             <div className="ribbon"></div>
 
             <div className="article-sec">
@@ -104,9 +99,6 @@ function App() {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
-
-            {/* <div className="container__fullwidth"> */}
             <div className="ribbon"></div>
             <Banner name="WORK" desc="some works I made" />
             {/* </div> */}

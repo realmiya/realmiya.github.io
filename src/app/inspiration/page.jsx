@@ -4,14 +4,7 @@ import "./inspiration.scss";
 const InspirationPage = () => {
     return (
         <>
-            <div
-                className="container__fullwidth work_sec"
-                // style={{
-                //     display: "flex",
-                //     flexDirection: "column",
-                //     justifyContent: "center",
-                // }}
-            >
+            <div className="work_sec carousel">
                 <div className="blobs">
                     <div className="blob blob-pink" />
                     <div className="blob blob-green" />

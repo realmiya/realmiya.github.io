@@ -1235,6 +1235,11 @@ body .App .wrapper .container__fullwidth .work_sec {
   background-color: #000;
   min-height: 100vh;
 }
+body .App .wrapper .container__fullwidth .work_sec.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body .App .wrapper .container__fullwidth .work_sec .timeline_container {
   padding: 225px 0 100px 0;
 }
