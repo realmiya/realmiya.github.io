@@ -210,6 +210,6 @@ export const projects = [
         website_link1: "https://www.cxtx.com.au/no_code",
         website_link2: "",
         my_duty:
-            "As a full-stack developer, I build multiple functions and components enabling the marketing teams to easily edit and update the site content.",
+            "As a full-stack developer, I built the Next.js project structure, functions, and components, and configured and designed the Storyblok CMS to enable the marketing teams to easily edit and update the site content.",
     },
 ];
