@@ -1,7 +1,9 @@
 {
-  "/works/page": "app/works/page.js",
   "/page": "app/page.js",
+  "/works/page": "app/works/page.js",
   "/inspiration/page": "app/inspiration/page.js",
   "/blog/page": "app/blog/page.js",
-  "/about/page": "app/about/page.js"
+  "/about/page": "app/about/page.js",
+  "/works/projects/page": "app/works/projects/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

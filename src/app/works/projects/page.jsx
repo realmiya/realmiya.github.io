@@ -4,9 +4,11 @@ import { projects } from "./projects";
 const page = () => {
     return (
         <>
-            <div className="work_sec container__fullwidth blobs">
-                <div className="blob blob-pink" />
-                <div className="blob blob-green" />
+            <div className="work_sec container__fullwidth">
+                <div className="blobs">
+                    <div className="blob blob-pink" />
+                    <div className="blob blob-green" />
+                </div>
                 <div className="timeline_container w-10/12 md:w-7/12 lg:6/12 mx-auto relative">
                     <div className="border-l-2 mt-10">
                         {projects
