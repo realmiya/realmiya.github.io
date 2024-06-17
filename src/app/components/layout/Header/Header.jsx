@@ -5,7 +5,6 @@ import logo from "./name_logo.svg";
 import Search from "../../Search/Search.jsx";
 import DropDownButton from "../../DropDownButton/DropDownButton";
 import { menuItems } from "../../../assets/inputData/menuItemsData.js";
-import { small_header } from "../../../assets/inputData/small_header.js";
 
 function Header() {
     return (
@@ -47,29 +46,6 @@ function Header() {
                 </div>
                 <div className="dropdown main">
                     <DropDownButton menuType="main" menuItems={menuItems} />
-                </div>
-            </header>
-
-            <header className={styles.small_header}>
-                <div className={styles.navHeader}>
-                    <a href="/">
-                        <div className={styles.appLogo_container}>
-                            {/* <img
-                                src="M-logo.svg"
-                                height="100"
-                                width="100"
-                            > */}
-                            {/* <Image
-                                // src="/md/white_md.jpeg"
-                                src="/vercel.svg"
-                                fill
-                                alt="M-logo"
-                            /> */}
-                        </div>
-                    </a>
-                    {/* <div className="dropdown main"> */}
-                    {/* <DropDownButton menuType="main" menuItems={small_header} /> */}
-                    {/* </div> */}
                 </div>
             </header>
         </>
