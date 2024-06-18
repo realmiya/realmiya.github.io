@@ -1125,6 +1125,7 @@ body .App .wrapper .container__fullwidth .article-sec {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
 body .App .wrapper .container__fullwidth .article-sec .name-sec {
   padding-bottom: 3rem;
