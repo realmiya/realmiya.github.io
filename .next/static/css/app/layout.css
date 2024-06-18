@@ -1246,6 +1246,7 @@ body .App .wrapper .container__fullwidth .work_sec .timeline_container {
 body .App .wrapper .container__fullwidth .work_sec .timeline_container .first-line {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 @keyframes rotate {
   100% {

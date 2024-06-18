@@ -28,7 +28,7 @@ const page = () => {
                                             <div className="text-xl font-bol">
                                                 {item.project_name}
                                             </div>
-                                            <div className="text-xl font-bol text-white ">
+                                            <div className="text-base font-bol text-white ">
                                                 {item.time_period}
                                             </div>
                                         </div>

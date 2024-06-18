@@ -21,7 +21,9 @@ const MasonryGrid = () => {
                     columnClassName="my-masonry-grid_column"
                 >
                     {grid_images.map((item, index) => (
-                        <img key={item.id} src={item.download_url} />
+                        <a href={item.url}>
+                            <img key={item.id} src={item.download_url} />
+                        </a>
                     ))}
                 </Masonry>
             </div>
