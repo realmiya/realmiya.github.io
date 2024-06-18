@@ -3,6 +3,7 @@
 import React from "react";
 import { grid_images } from "../../assets/inputData/gridData";
 import Masonry from "react-masonry-css";
+import "./masonryGrid.scss";
 // import Image from "next/image";
 const breakpointColumnsObj = {
     default: 4,
@@ -22,7 +23,11 @@ const MasonryGrid = () => {
                 >
                     {grid_images.map((item, index) => (
                         <a href={item.url}>
-                            <img key={item.id} src={item.download_url} />
+                            <img
+                                className="masonry_img"
+                                key={item.id}
+                                src={item.download_url}
+                            />
                         </a>
                     ))}
                 </Masonry>
