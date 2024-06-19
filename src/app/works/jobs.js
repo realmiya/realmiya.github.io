@@ -1,5 +1,16 @@
 export const jobs = [
     {
+        id: 4,
+        employer: "JR Academy",
+        jobTitle: "Full-stack Developer",
+        jobDuty: [
+            "Full-stack development for projects, including creating and maintaining responsive web pages, components, functions",
+        ],
+        period: "May 2024 - Present",
+        location: "Remote",
+    },
+
+    {
         id: 1,
         employer: "CX Lavender",
         jobTitle: "Front-End Developer",

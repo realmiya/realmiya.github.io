@@ -76,13 +76,13 @@ function App() {
                                 <b>Full-Stack</b>
                                 <br></br>Next.js, React, Angular, Redux, Node,
                                 Express.js, Django, Keystone6, Storyblok,
-                                MongoDB, Mongoose, PostgreSQL, MySQL, Django,
-                                D3.js, GraphQL, Prisma, axios, API, Druapl, WP,
-                                HTML, CSS, Less, SCSS, AntD, Bootstrap,
-                                Material-UI, Syncfusion, Figma, Sketch, Adobe
-                                Illustrator, Adobe Photoshop, Adobe InDesign,
-                                Adobe XD, AWS, ddev, docker, SiteGround,
-                                DeployBot, Cloudflare
+                                MongoDB, Mongoose, bash, PostgreSQL, MySQL,
+                                Django, D3.js, GraphQL, Prisma, axios, API,
+                                Druapl, WP, HTML, CSS, Less, SCSS, AntD,
+                                Bootstrap, Material-UI, Syncfusion, Figma,
+                                Sketch, Adobe Illustrator, Adobe Photoshop,
+                                Adobe InDesign, Adobe XD, AWS, ddev, docker,
+                                SiteGround, DeployBot, Cloudflare
                             </div>
                         </div>
                         <div className="flexitem four">

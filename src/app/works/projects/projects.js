@@ -212,4 +212,16 @@ export const projects = [
         my_duty:
             "As a full-stack developer, I built the Next.js project structure, functions, and components, and configured and designed the Storyblok CMS to enable the marketing teams to easily edit and update the site content.",
     },
+
+    {
+        id: 19,
+        project_name: "jr-academy",
+        time_period: "May 2024 - Present",
+        stack: ["next.js", "TS", "MongoDB"],
+        description: "a responsive functional website for jr-academy",
+        website_link1: "https://jiangren.com.au/",
+        website_link2: "",
+        my_duty:
+            "Full-stack development for the official website, including creating and maintaining responsive components, functions.",
+    },
 ];
