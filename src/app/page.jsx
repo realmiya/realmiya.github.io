@@ -40,7 +40,7 @@ function App() {
             <div className="article-sec">
                 <div className="name-sec">
                     <div className="md-container">
-                        <Image src="/md/md.jpg" fill alt="md" />
+                        <Image src="/md/md.jpg" fill="true" alt="md" />
                     </div>
                     <div className="second_line">developer/ designer</div>
                 </div>

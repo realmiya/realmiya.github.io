@@ -22,25 +22,25 @@ const page = () => {
                                 {/* <!-- Line that connecting the box with the vertical line --> */}
                                 <div className="w-10 h-1 bg-white absolute -left-10 z-0"></div>
                                 <div className="flex-auto">
-                                    <div className="first-line">
+                                    <div className="first-line first-sec">
                                         <div className="text-xl font-bol">
                                             {item.employer}
                                         </div>
-                                        <div className="text-xl font-bol text-white ">
+                                        <div className="time_period text-xl font-bol text-white ">
                                             {item.period}
                                         </div>
                                     </div>
-                                    <div className="first-line">
+                                    <div className="first-line  first-sec">
                                         <div className="text-sm font-medium">
                                             {item.jobTitle}
                                         </div>
-                                        <div className="text-sm font-medium">
+                                        <div className="time_period text-sm font-medium">
                                             {item.location}
                                         </div>
                                     </div>
                                     {item.jobDuty.map((item, idx) => (
                                         <ul
-                                            className="list-disc text-base"
+                                            className="list-disc text-base  first-sec"
                                             key={idx}
                                         >
                                             <li>{item}</li>

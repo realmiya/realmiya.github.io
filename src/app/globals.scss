@@ -115,8 +115,17 @@ $greenBlob: 711px;
 
 body {
     .App {
-        min-width: 768px;
+        // min-width: 650px;
         .wrapper {
+            .overlay {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.01);
+                z-index: 11;
+            }
             background-color: #ffffff;
             display: flex;
             align-items: center;
@@ -334,6 +343,43 @@ body {
                     background-color: #000;
                     min-height: 100vh;
                     .timeline_container {
+                        .time_period {
+                            text-align: right;
+                        }
+                        @media (max-width: 650px) {
+                            .first-sec {
+                                padding-bottom: 0.5rem;
+                            }
+                            .first-line {
+                                div {
+                                    font-size: 16px;
+                                }
+                            }
+                            padding: 120px 0 100px 0;
+                            font-size: 13px;
+                            .text-lg {
+                                font-size: 14px;
+                                line-height: 1rem;
+                            }
+                            @media (max-width: 450px) {
+                                .first-line {
+                                    div {
+                                        font-size: 14px;
+                                    }
+                                }
+                                padding: 100px 0 100px 0;
+                                font-size: 12px;
+                                .text-lg {
+                                    font-size: 12px;
+                                }
+                                @media (max-width: 380px) {
+                                    .time_period {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
                         padding: 225px 0 100px 0;
                         .first-line {
                             display: flex;

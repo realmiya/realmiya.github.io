@@ -27,7 +27,7 @@ const MasonryGrid = () => {
                                 className="masonry_img"
                                 key={item.id}
                                 src={item.download_url}
-                                fill
+                                fill="true"
                             />
                         </a>
                     ))}

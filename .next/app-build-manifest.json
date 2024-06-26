@@ -22,17 +22,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/works/projects/page.js"
     ],
-    "/inspiration/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/inspiration/page.css",
-      "static/chunks/app/inspiration/page.js"
-    ],
-    "/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/page.js"
-    ],
     "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

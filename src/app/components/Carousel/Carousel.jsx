@@ -59,7 +59,7 @@ const Carousel = (props) => {
                         <img
                             src={image.imgURL}
                             alt={image.label}
-                            fill
+                            fill="true"
                             key={idx}
                             loading="lazy"
                             onTransitionEnd={handleTransitionEnd}

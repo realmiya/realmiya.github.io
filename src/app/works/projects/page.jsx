@@ -24,16 +24,16 @@ const page = () => {
                                     {/* <!-- Line that connecting the box with the vertical line --> */}
                                     <div className="w-10 h-1 bg-white absolute -left-10 z-0"></div>
                                     <div className="flex-auto">
-                                        <div className="first-line">
+                                        <div className="first-line first-sec">
                                             <div className="text-xl font-bol">
                                                 {item.project_name}
                                             </div>
-                                            <div className="text-base font-bol text-white ">
+                                            <div className="time_period text-base font-bol text-white ">
                                                 {item.time_period}
                                             </div>
                                         </div>
 
-                                        <div>
+                                        <div className="first-sec">
                                             <a
                                                 href={item.website_link1}
                                                 className="hover:text-gray-300"
@@ -41,7 +41,7 @@ const page = () => {
                                                 {item.website_link1}
                                             </a>
                                         </div>
-                                        <div>
+                                        <div className="first-sec">
                                             <a
                                                 href={item.website_link2}
                                                 className="hover:text-gray-300"
@@ -50,9 +50,11 @@ const page = () => {
                                             </a>
                                         </div>
 
-                                        <div>{item.description}</div>
+                                        <div className="first-sec">
+                                            {item.description}
+                                        </div>
 
-                                        <div className="text-lg">
+                                        <div className="text-lg first-sec">
                                             My Duty:{` ${item.my_duty}`}
                                         </div>
                                     </div>
