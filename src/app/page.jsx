@@ -18,8 +18,6 @@ function App() {
                             <br></br>I started my career as a full-stack
                             developer after graduating from UNSW<br></br>with a
                             Master's Degree in Artificial Intelligence.<br></br>
-                            I studied and worked in Sydney from 2020 to 2024,
-                            and now I am in Toronto.
                         </div>
 
                         <div className="btn_set">
