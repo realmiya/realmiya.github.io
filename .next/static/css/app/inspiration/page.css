@@ -1,0 +1,71 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/Carousel/carousel.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel_carouselWapper__b2bAm {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 570px;
+  width: 100%;
+  left: 0;
+}
+.carousel_carouselWapper__b2bAm .carousel_arrowIcon__ad6SN {
+  cursor: pointer;
+  position: absolute;
+  stroke: grey;
+  stroke-width: 0.5;
+  font-size: 5%;
+  width: 3.1rem;
+  height: 3.2rem;
+  color: grey;
+  background-color: #fff;
+  box-shadow: 0 1px 12px rgba(33, 33, 33, 0.8);
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0.4;
+}
+.carousel_carouselWapper__b2bAm .carousel_arrowIcon__ad6SN:hover {
+  opacity: 0.8;
+}
+.carousel_carouselWapper__b2bAm .carousel_arrowIcon__ad6SN.carousel_left__Qgt_2 {
+  left: 2rem;
+}
+.carousel_carouselWapper__b2bAm .carousel_arrowIcon__ad6SN.carousel_right__8yeKE {
+  right: 2rem;
+}
+.carousel_carouselWapper__b2bAm img {
+  flex: 0 0 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.carousel_carouselWapper__b2bAm .carousel_dotsContainer___dwPf {
+  position: absolute;
+  bottom: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel_carouselWapper__b2bAm .carousel_dotsContainer___dwPf .carousel_dot__xUbd7 {
+  margin: 5px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+.carousel_carouselWapper__b2bAm .carousel_dotsContainer___dwPf .carousel_dot__xUbd7.carousel_clicked__ijlU0 {
+  background-color: #2b3856;
+}
+.carousel_carouselWapper__b2bAm .carousel_dotsContainer___dwPf .carousel_dot__xUbd7:hover {
+  background-color: rgb(28, 78, 110);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/app/inspiration/inspiration.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel_container {
+  padding-top: 185px;
+  width: 60%;
+}

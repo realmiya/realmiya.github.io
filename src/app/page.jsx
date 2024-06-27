@@ -57,7 +57,7 @@ function App() {
                             </div>
                             <div className="text-container">
                                 <b>Programming Languages</b>
-                                <br></br>Python, JS, TS, Java
+                                <br></br>Python, JS, TS, Java, PHP
                             </div>
                         </div>
                         <div className="flexitem two">
@@ -67,7 +67,7 @@ function App() {
                             <div className="text-container">
                                 <b>Data & AI</b>
                                 <br></br>Pandas, OpenCV, PyTorch, NumPy, R,
-                                matplotlib
+                                matplotlib, Power BI
                             </div>
                         </div>
                     </div>
@@ -78,15 +78,16 @@ function App() {
                             </div>
                             <div className="text-container">
                                 <b>Full-Stack</b>
-                                <br></br>Next.js, React, Angular, Redux, Node,
-                                Express.js, Django, Keystone6, Storyblok,
-                                MongoDB, Mongoose, bash, PostgreSQL, MySQL,
-                                Django, D3.js, GraphQL, Prisma, axios, API,
-                                Druapl, WP, HTML, CSS, Less, SCSS, AntD,
+                                <br></br>Next.js, React, React Native, Nest.js,
+                                Redux, Node, Express.js, Django, Keystone,
+                                Storyblok, WP, MongoDB, Mongoose, PostgreSQL,
+                                MySQL, Django, D3.js, GraphQL, Prisma, axios,
+                                API, Druapl, WP, HTML, CSS, Less, SCSS, AntD,
                                 Bootstrap, Material-UI, Syncfusion, Figma,
-                                Sketch, Adobe Illustrator, Adobe Photoshop,
-                                Adobe InDesign, Adobe XD, AWS, ddev, docker,
-                                SiteGround, DeployBot, Cloudflare
+                                Sketch, UX/UI,Adobe Illustrator, Adobe
+                                Photoshop, Adobe InDesign, Adobe XD, AWS, ddev,
+                                docker, SiteGround, DeployBot, Cloudflare,
+                                Test-driven development
                             </div>
                         </div>
                         <div className="flexitem four">
