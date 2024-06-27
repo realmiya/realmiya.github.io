@@ -196,6 +196,7 @@ body {
                     }
                     position: relative;
                     width: calc(100% + 8rem);
+
                     min-height: 100vh;
                     background-image: url("../../public/bg1.jpg");
                     background-repeat: no-repeat;
@@ -206,6 +207,9 @@ body {
                     align-items: center;
                     @media (max-width: 650px) {
                         position: relative;
+                        @media (max-width: 480px) {
+                            width: calc(100% + 4rem);
+                        }
                     }
                 }
                 .article-sec {
@@ -325,15 +329,27 @@ body {
                         :first-child {
                             // padding-left: 0;
                         }
+                        @media (max-width: 480px) {
+                            margin-left: -10px; /* gutter size offset */
+                            @media (max-width: 350px) {
+                                // margin-left: -15px; /* gutter size offset */
+                            }
+                        }
                     }
                     .my-masonry-grid_column {
                         padding-left: 30px; /* gutter size */
                         background-clip: padding-box;
+                        @media (max-width: 480px) {
+                            padding-left: 10px; /* gutter size */
+                        }
                     }
 
                     .my-masonry-grid_column {
                         img {
                             padding: 15px 0;
+                            @media (max-width: 480px) {
+                                padding: 10px 0;
+                            }
                         }
                     }
                 }
@@ -342,6 +358,9 @@ body {
                 }
                 width: 100%;
                 padding: 0rem 4rem 0 4rem;
+                @media (max-width: 480px) {
+                    padding: 0rem 2rem 0 2rem;
+                }
 
                 display: flex;
                 align-items: center;
@@ -498,4 +517,8 @@ body {
     width: calc(100% + 8rem);
     @include blue-gradient();
     height: 19.5px;
+
+    @media (max-width: 480px) {
+        width: calc(100% + 4rem);
+    }
 }

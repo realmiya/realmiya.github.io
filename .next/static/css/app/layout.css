@@ -1177,6 +1177,11 @@ body .App .wrapper .container__fullwidth .top .download .text_button .text {
     position: relative;
   }
 }
+@media (max-width: 650px) and (max-width: 480px) {
+  body .App .wrapper .container__fullwidth .top {
+    width: calc(100% + 4rem);
+  }
+}
 body .App .wrapper .container__fullwidth .article-sec {
   min-height: 100vh;
   max-width: 1200px;
@@ -1290,15 +1295,35 @@ body .App .wrapper .container__fullwidth .grid .my-masonry-grid { /* Not needed 
   margin-left: -30px; /* gutter size offset */
   width: auto;
 }
+@media (max-width: 480px) {
+  body .App .wrapper .container__fullwidth .grid .my-masonry-grid {
+    margin-left: -10px; /* gutter size offset */
+  }
+}
 body .App .wrapper .container__fullwidth .grid .my-masonry-grid_column {
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
 }
+@media (max-width: 480px) {
+  body .App .wrapper .container__fullwidth .grid .my-masonry-grid_column {
+    padding-left: 10px; /* gutter size */
+  }
+}
 body .App .wrapper .container__fullwidth .grid .my-masonry-grid_column img {
   padding: 15px 0;
 }
+@media (max-width: 480px) {
+  body .App .wrapper .container__fullwidth .grid .my-masonry-grid_column img {
+    padding: 10px 0;
+  }
+}
 body .App .wrapper .container__fullwidth.grey {
   background-color: #f7f7f7;
+}
+@media (max-width: 480px) {
+  body .App .wrapper .container__fullwidth {
+    padding: 0rem 2rem 0 2rem;
+  }
 }
 body .App .wrapper .container__fullwidth .work_sec {
   width: calc(100% + 8rem);
@@ -1428,21 +1453,22 @@ body .App .wrapper .dropdown.main:before {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e46e26", endColorstr="#ffdd00",GradientType=1 );
   height: 19.5px;
 }
-
+@media (max-width: 480px) {
+  .ribbon {
+    width: calc(100% + 4rem);
+  }
+}
 .hover\:-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
-
 .focus\:cursor-text:focus {
   cursor: text;
 }
-
 @media (min-width: 768px) {
 
   .md\:mt-0 {

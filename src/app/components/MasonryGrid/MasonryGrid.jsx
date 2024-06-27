@@ -9,7 +9,7 @@ const breakpointColumnsObj = {
     default: 4,
     1100: 3,
     700: 2,
-    500: 4,
+    500: 3,
 };
 
 const MasonryGrid = () => {
