@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./header.module.scss";
 import Image from "next/image";
-import logo from "./name_logo.svg";
 import Search from "../../Search/Search.jsx";
 import DropDownButton from "../../DropDownButton/DropDownButton";
 import { menuItems } from "../../../assets/inputData/menuItemsData.js";
@@ -91,7 +90,6 @@ function Header() {
                         <div className={styles.slidemenu}>
                             <a href="/works/projects">Projects</a>
                             <a href="/works">Experience</a>
-
                             <a href="/about">About</a>
                             <a href="#footer">Contact</a>
                         </div>

@@ -23,7 +23,13 @@ const AboutPage = () => {
                             >
                                 <button>DOWNLOAD RESUME / CV</button>
                             </a>
-                            <button>DOWNLOAD COVER LETTER</button>
+                            <a
+                                href="/cover_letter.pdf"
+                                download="cover_letter"
+                                target="_blank"
+                            >
+                                <button>DOWNLOAD COVER LETTER</button>
+                            </a>
                         </div>
                     </div>
                 </div>

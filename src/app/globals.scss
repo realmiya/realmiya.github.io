@@ -143,8 +143,7 @@ body {
                         color: $color-abbey;
 
                         @media (max-width: 750px) {
-                            // top: calc(100vh - 180px);
-                            // bottom: 0px;
+                            font-size: 15px;
                         }
 
                         .name_logo_style {
@@ -158,12 +157,26 @@ body {
 
                             button {
                                 color: white;
-
                                 background-color: rgb(45, 45, 86, 0.4);
                                 padding: 15px 36px;
-                                border-radius: 2px;
+                                border-radius: 5px;
                                 &:first-child {
                                     margin-right: 15px;
+                                }
+                            }
+                            @media (max-width: 450px) {
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 15px;
+                                button {
+                                    color: white;
+                                    background-color: rgb(45, 45, 86, 0.4);
+                                    padding: 5px 10px;
+                                    border-radius: 5px;
+                                    &:first-child {
+                                        margin-right: 15px;
+                                    }
                                 }
                             }
                         }
