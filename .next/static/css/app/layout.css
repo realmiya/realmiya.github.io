@@ -7,6 +7,16 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 450px) {
+  .banner_banner_sec__6emzY {
+    padding: 3.5rem 0 2rem 0;
+  }
+}
+@media (max-width: 450px) and (max-width: 350px) {
+  .banner_banner_sec__6emzY {
+    padding: 3rem 0 2rem 0;
+  }
+}
 .banner_banner_sec__6emzY .banner_banner__yo22_ {
   font-size: 62px;
   font-family: "PalmBeach Trial", sans-serif;
@@ -15,6 +25,17 @@
   font-weight: 700;
   color: #202020;
   text-transform: uppercase;
+}
+@media (max-width: 450px) {
+  .banner_banner_sec__6emzY .banner_banner__yo22_ {
+    font-size: 35px;
+    font-family: "Montserrat", Arial, serif;
+  }
+}
+@media (max-width: 450px) and (max-width: 350px) {
+  .banner_banner_sec__6emzY .banner_banner__yo22_ {
+    font-size: 28px;
+  }
 }
 .banner_banner_sec__6emzY .banner_banner-desc__d2gPS {
   color: rgb(177, 177, 177);
@@ -1182,6 +1203,17 @@ body .App .wrapper .container__fullwidth .article-sec .name-sec .md-container {
 @media (max-width: 780px) {
   body .App .wrapper .container__fullwidth .article-sec .name-sec .md-container {
     max-width: 260px;
+  }
+}
+@media (max-width: 780px) and (max-width: 380px) {
+  body .App .wrapper .container__fullwidth .article-sec .name-sec .md-container {
+    max-width: 200px;
+    height: 50px;
+  }
+}
+@media (max-width: 500px) {
+  body .App .wrapper .container__fullwidth .article-sec .name-sec {
+    padding-bottom: 2rem;
   }
 }
 body .App .wrapper .container__fullwidth .article-sec .flexbox {

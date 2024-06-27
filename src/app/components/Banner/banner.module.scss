@@ -3,20 +3,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 450px) {
+        padding: 3.5rem 0 2rem 0;
+
+        @media (max-width: 350px) {
+            padding: 3rem 0 2rem 0;
+        }
+    }
+
     .banner {
-        // font-family: "Alegre Sans Regular NC";
         font-size: 62px;
-        // font-family: "Montserrat", Arial, serif;
         font-family: "PalmBeach Trial", sans-serif;
         font-weight: bolder;
         line-height: 0.7;
         font-weight: 700;
         color: #202020;
         text-transform: uppercase;
+        @media (max-width: 450px) {
+            font-size: 35px;
+            font-family: "Montserrat", Arial, serif;
+            @media (max-width: 350px) {
+                font-size: 28px;
+            }
+        }
     }
     .banner-desc {
         color: rgb(177, 177, 177);
         text-align: center;
-        // text-transform: uppercase;
     }
 }
