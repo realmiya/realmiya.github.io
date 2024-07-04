@@ -78,7 +78,7 @@ function App() {
                             </div>
                             <div className="text-container">
                                 <b>Full-Stack</b>
-                                <br></br>Next.js, React, React Native, Nest.js,
+                                <br></br>Next.js, React, React Native, Nest.js,
                                 Redux, Node, Express.js, Django, Keystone,
                                 Storyblok, WP, MongoDB, Mongoose, PostgreSQL,
                                 MySQL, Django, D3.js, GraphQL, Prisma, axios,
