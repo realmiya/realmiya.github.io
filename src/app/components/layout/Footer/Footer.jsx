@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className={styles.footer_text}>
                     <div className={styles.footer_desc}>(+1) 4374357168</div>
                     <div className={styles.footer_desc}>
-                        miyatungtung@gmail.com
+                        miyadongwork@gmail.com
                     </div>
                 </div>
 

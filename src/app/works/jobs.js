@@ -1,5 +1,33 @@
 export const jobs = [
     {
+        id: 6,
+        employer: "CPAC Canada",
+        jobTitle: "Event Coordinator, volunteer",
+        jobDuty: [
+            "Conducted pre-event inspections of stages and venues to ensure technical/safety compliance.",
+            "Resolving 100% of identified issues before guest arrival.",
+            "Moderated panels and speaker sessions, engaging audiences of 50+ attendees through Q&A coordination and time management."
+        ],
+        period: "Feb 2025 - Present",
+        location: "multiple locations, Toronto",
+        type:"volunteer"
+
+    },
+    {
+        id: 5,
+        employer: "V-Imaging Plus Inc.",
+        jobTitle: "Application Developer",
+        jobDuty: [
+            "Spearheading the development and maintenance of software applications for item detection and creating data visualizations for client-facing reports.",
+            "Engaging in customer relationship management, troubleshooting, and providing solutions for clients across the Greater Toronto Area.",
+        ],
+        period: "Sep 2024 - Present",
+        location: "North York, Toronto",
+        type:"CA"
+    },
+
+
+    {
         id: 4,
         employer: "JR Academy",
         jobTitle: "Full-stack Developer",
@@ -15,10 +43,9 @@ export const jobs = [
         employer: "CX Lavender",
         jobTitle: "Front-End Developer",
         jobDuty: [
-            "Frontend and backend development for projects, including creating responsive web pages, components, functions, database migration, upgrading dependencies and frameworks",
+            "Developed web solutions for the banking, marketing, and construction industries, enhancing client experiences with customized platforms for major clients (e.g., St. George, BlueScope Steel).",
             "AWS migration and deployment",
-            "Clean and prepare data for database migration",
-            "QA for software products",
+            "Led client marketing campaigns using Salesforce Marketing Cloud and facilitated front-end and back-end development.",
         ],
         period: "May 2023 - Nov 2023",
         location: "Sydney, Australia",
@@ -51,5 +78,34 @@ export const jobs = [
         ],
         period: "Sep 2021 - Nov 2021",
         location: "Sydney, Australia",
+    },    
+    {
+        id: 8,
+        employer: "China Merchants Bank",
+        jobTitle: "Financial Planner & Wealth Manager",
+        jobDuty: [
+            "Conducted detailed portfolio analysis for 250+ high-net-worth clients, identifying investment trends that led to a 8% return improvement.",
+            "Developed financial forecasting models for assets under management ($15M+) and supported clients in achieving their financial goals through customized investment strategies.",
+            "Crafted Investment Policy Statements (IPS) for clients, reviewing and updating them periodically based on changing financial objectives.",
+            "Provided holistic financial advice, covering investment portfolios, risk management, debt strategies, and long-term financial planning.",
+
+        ],
+        period: "Sep 2013 - Aug 2016",
+        location: "Changzhou, China",
+        type:"CHN"
+    },   
+     {
+        id: 7,
+        employer: "Bank of Communications Co., Ltd.",
+        jobTitle: "Integrated Teller",
+        jobDuty: [
+            "Managed day-to-day client banking services, including deposits, loan payments, and withdrawals.",
+            "Reconciled financial records and conducted daily transaction reporting, identifying inconsistencies and suggesting corrective actions.",
+            "Analyzed customer financial data to recommend suitable banking products, enhancing product cross-sell rates.",
+
+        ],
+        period: "July 2012 - Sep 2013",
+        location: "Nanjing, China",
+        type:"CHN"
     },
 ];

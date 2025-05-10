@@ -1,7 +1,7 @@
 export const small_header = {
     Experience: [
         {
-            title: "My Works",
+            title: "Work Experience",
             mobileTitle: "Works",
             path: "/works",
             cName: "menu-btn",
