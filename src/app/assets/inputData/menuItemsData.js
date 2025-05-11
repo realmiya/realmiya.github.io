@@ -1,8 +1,8 @@
 export const menuItems = {
     "My Works": [
         {
-            title: "Work Experience",
-            mobileTitle: "Works",
+            title: "Experience",
+            mobileTitle: "Experience",
             path: "/works",
             cName: "menu-btn",
         },

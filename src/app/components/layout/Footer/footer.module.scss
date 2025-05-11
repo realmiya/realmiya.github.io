@@ -1,8 +1,26 @@
 @import "../../../assets/styles/global/_mixins.scss";
 
 .footer {
+                        &:before {
+                        content: "";
+                        position: absolute;
+                        left: 50%; /* Start from center */
+                        transform: translateX(-50%); /* Pull back by 50% of element's width */
+                        z-index: 1;
+                        width: 90%;
+                        height: 4px;
+                        background: linear-gradient(
+                            90deg,
+                            #ab9ba6 0, 
+                            #a65c93 10%,
+                            #b07e8d 30%,
+                            #a22577 59%,
+                            #771755 85%,
+                            #3a042a
+                        );
+                    }
     font-family: "Montserrat", Arial, serif;
-    width: 100%;
+    width: calc(100% + 8rem);
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -2,7 +2,7 @@ export const jobs = [
     {
         id: 6,
         employer: "CPAC Canada",
-        jobTitle: "Event Coordinator, volunteer",
+        jobTitle: "Event Coordinator, Volunteer",
         jobDuty: [
             "Conducted pre-event inspections of stages and venues to ensure technical/safety compliance.",
             "Resolving 100% of identified issues before guest arrival.",
@@ -36,6 +36,7 @@ export const jobs = [
         ],
         period: "May 2024 - Present",
         location: "Remote",
+        type:"AU"
     },
 
     {
@@ -49,6 +50,7 @@ export const jobs = [
         ],
         period: "May 2023 - Nov 2023",
         location: "Sydney, Australia",
+        type:"AU"
     },
     {
         id: 2,
@@ -67,6 +69,7 @@ export const jobs = [
         ],
         period: "Dec 2021 - Dec 2022",
         location: "Sydney, Australia",
+        type:"AU"
     },
     {
         id: 3,
@@ -78,6 +81,7 @@ export const jobs = [
         ],
         period: "Sep 2021 - Nov 2021",
         location: "Sydney, Australia",
+        type:"AU"
     },    
     {
         id: 8,

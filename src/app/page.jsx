@@ -29,7 +29,7 @@ function App() {
                             <br></br>
                             After launching my career as a full-stack developer with a Master of Information Technology (major: AI) from UNSW, I discovered my true passion lies in financial strategy—not only in building tools but also in applying them to support data-informed decision-making.
                             <br></br>
-                            <br></br> As a CPA candidate now transitioning into Financial Planning & Analysis in Toronto, I combine technical expertise in Python and BI tools with rigorous accounting training to transform complex data into strategic financial insights.
+                            <br></br> As a CPA candidate now transitioning into Financial Planning & Analysis in Toronto, I combine technical expertise in Advanced Excel, Python and BI tools with rigorous accounting training to transform complex data into strategic financial insights.
                         </div>
 
                         <div className="btn_set">
@@ -59,7 +59,7 @@ function App() {
                         <Image src="/md/md.jpg" fill="true" alt="md" />
                     </div>
                     {/* <div className="second_line">developer/ designer</div> */}
-                    <div className="second_line">An aspiring financial | technology professional</div>
+                    <div className="second_line">An aspiring Financial | Tech professional</div>
 
                     
                 </div>
@@ -81,8 +81,7 @@ function App() {
                             </div>
                             <div className="text-container">
                                 <b>Data & AI</b>
-                                <br></br>Pandas, OpenCV, PyTorch, NumPy, R,
-                                matplotlib, Power BI
+                                <br></br>Advanced Excel, Power BI, Pandas, OpenCV, PyTorch, NumPy, R,matplotlib
                             </div>
                         </div>
                     </div>
@@ -97,12 +96,9 @@ function App() {
                                 Redux, Node, Express.js, Django, Keystone,
                                 Storyblok, WP, MongoDB, Mongoose, PostgreSQL,
                                 MySQL, Django, D3.js, GraphQL, Prisma, axios,
-                                API, Druapl, WP, HTML, CSS, Less, SCSS, AntD,
-                                Bootstrap, Material-UI, Syncfusion, Figma,
-                                Sketch, UX/UI,Adobe Illustrator, Adobe
+                                API, Druapl, WP, HTML, CSS, Less, SCSS, Figma, Sketch, UX/UI, Adobe Illustrator, Adobe
                                 Photoshop, Adobe InDesign, Adobe XD, AWS, ddev,
-                                docker, SiteGround, DeployBot, Cloudflare,
-                                Test-driven development
+                                docker, SiteGround, DeployBot, Cloudflare
                             </div>
                         </div>
                         <div className="flexitem four">
