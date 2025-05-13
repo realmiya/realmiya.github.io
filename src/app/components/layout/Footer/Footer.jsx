@@ -65,7 +65,7 @@ export default function Footer() {
                           <a href="https://realmiya.github.io/works" className="hover:underline">Work Experience</a>
                       </li>
                       <li>
-                          <a href="https://realmiya.github.io/works/projects/" className="hover:underline">Project</a>
+                          <a href="https://realmiya.github.io/works/projects" className="hover:underline">Project</a>
                       </li>
                   </ul>
               </div>
