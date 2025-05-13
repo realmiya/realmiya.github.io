@@ -15,7 +15,7 @@ const breakpointColumnsObj = {
 const MasonryGrid = () => {
     return (
         <>
-            <div>
+            <div style={{paddingBottom: 2+'rem'}}>
                 <Masonry
                     breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
