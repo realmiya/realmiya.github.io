@@ -1,11 +1,14 @@
 import "./globals.scss";
 import Banner from "./components/Banner/Banner";
+import ExpandableButton from "./components/ExpandableButton/ExpandingButton";
 import { GoCodeReview } from "react-icons/go";
 import { GoCodespaces } from "react-icons/go";
 import { GoMortarBoard } from "react-icons/go";
 import { GoLightBulb } from "react-icons/go";
 import MasonryGrid from "./components/MasonryGrid/MasonryGrid";
 import Image from "next/image";
+
+
 
 function App() {
     return (
@@ -60,10 +63,57 @@ function App() {
                     </div>
                     {/* <div className="second_line">developer/ designer</div> */}
                     <div className="second_line">An aspiring Financial | Tech professional</div>
+             </div>
 
-                    
+<ExpandableButton title="Financial Skills">
+                    <div className="flexbox">
+                        <div className="flex-row">
+                            <div className="flexitem one">
+                                <div className="img-container">
+                                    <GoCodeReview />
+                                </div>
+                                <div className="text-container">
+                                    <b>Financial & Accounting Skills</b>
+                                    <br></br>Financial Planning & Analysis (FP&A), Financial Modeling, Month-End Reporting, NPV Analysis, Budgeting & Forecasting, Business Case Development, Variance Analysis, US GAAP Compliance, Financial Statement Analysis
+                                </div>
+                            </div>
+                            <div className="flexitem two">
+                                <div className="img-container">
+                                    <GoLightBulb />
+                                </div>
+                                <div className="text-container">
+                                    <b>Data & Tech</b>
+                                    <br></br>Advanced MS Excel (VBA, PivotTables, Macros), SQL, Power BI, Tableau, Pandas, R, Data Visualization, Financial Reporting Automation, Proficient in QuickBooks, G Suite, Salesforce Marketing Cloud, Database Management and CRM solutions
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="flexitem three">
+                                <div className="img-container">
+                                    <GoCodespaces />
+                                </div>
+                                <div className="text-container">
+                                    <b>Education</b>
+                                    <br></br>Bachelor of Management (Major: Accounting & Auditing), Graduate Certificate in Professional Accounting, Advanced Diploma in Accounting and Business(ACCA), Master of Information Technology (Major: AI, Distinction GPA: 3.7)
+                                </div>
+                            </div>
+                            <div className="flexitem four">
+                                <div className="img-container">
+                                    <GoMortarBoard />
+                                </div>
+                                <div className="text-container">
+                                    <b>Certifications</b>
+                                    <br></br>Currently pursuing CPA Canada designation (9/14 core preparation courses completed), US CPA candidate, ACCA (13 exams passed), Certified Associate Financial Planner (CAFP), Salesforce
+                                    Marketing Cloud Email Specialist, ACCA, etc.
+                                </div>
+                            </div>
+                    </div>
                 </div>
+</ExpandableButton>
 
+
+
+            <ExpandableButton title="Full-Stack Development Skills">
                 <div className="flexbox">
                     <div className="flex-row">
                         <div className="flexitem one">
@@ -72,7 +122,7 @@ function App() {
                             </div>
                             <div className="text-container">
                                 <b>Programming Languages</b>
-                                <br></br>Python, JS, TS, Java, PHP
+                                <br></br>Python, JS, TS, Go, Java, PHP
                             </div>
                         </div>
                         <div className="flexitem two">
@@ -81,7 +131,7 @@ function App() {
                             </div>
                             <div className="text-container">
                                 <b>Data & AI</b>
-                                <br></br>Advanced Excel, Power BI, Pandas, OpenCV, PyTorch, NumPy, R,matplotlib
+                                <br></br>Power BI, Pandas, OpenCV, PyTorch, NumPy, R, matplotlib
                             </div>
                         </div>
                     </div>
@@ -108,12 +158,15 @@ function App() {
                             <div className="text-container">
                                 <b>Certifications</b>
                                 <br></br>AWS Certified Developer, Salesforce
-                                Marketing Cloud Email Specialist, Associate
-                                Finalcial Planner, ACCA, etc.
+                                Marketing Cloud Email Specialist, etc.
                             </div>
                         </div>
                     </div>
                 </div>
+            </ExpandableButton>
+
+
+
             </div>
             <div className="ribbon"></div>
             <Banner name="WORK" desc="some works I made" />

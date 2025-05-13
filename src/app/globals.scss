@@ -187,6 +187,12 @@ body {
                                 font-weight: bolder;
 
                                 font-size: 18px;
+                                @media (max-width: 650px) {
+                                    font-size: 14px;
+                                    @media (max-width: 480px) {
+                                        font-size: 12px;
+                                    }
+                                }
                                 text-align: center;
                                 padding: 1.5rem 3.5rem;
                                 font-family: "Lucida Sans Unicode Regular";
@@ -207,8 +213,10 @@ body {
                     align-items: center;
                     @media (max-width: 650px) {
                         position: relative;
+                        background-image: url("../../public/bg2.jpg");
                         @media (max-width: 480px) {
                             width: calc(100% + 4rem);
+                             background-image: url("../../public/bg3.jpg");
                         }
                     }
                 }
