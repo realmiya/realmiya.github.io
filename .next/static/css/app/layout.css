@@ -987,6 +987,12 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
+.pr-8 {
+  padding-right: 2rem;
+}
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
