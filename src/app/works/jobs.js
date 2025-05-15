@@ -2,7 +2,7 @@ export const jobs = [
     {
         id: 6,
         employer: "CPAC Canada",
-        jobTitle: "Event Coordinator, Volunteer",
+        jobTitle: "Event Coordinator & Moderator",
         jobDuty: [
             "Conducted pre-event inspections of stages and venues to ensure technical/safety compliance.",
             "Resolving 100% of identified issues before guest arrival.",
