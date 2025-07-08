@@ -30,9 +30,9 @@ function App() {
                             Hi there, I am Miya Dong.
                             <br></br>
                             <br></br>
-                            After launching my career as a full-stack developer with a Master of Information Technology (major: AI) from UNSW, I discovered my true passion lies in financial strategy—not only in building tools but also in applying them to support data-informed decision-making.
+                            Passionate about both building digital solutions and driving financial strategy. 
                             <br></br>
-                            <br></br> As a CPA candidate now transitioning into Financial Planning & Analysis in Toronto, I combine technical expertise in Advanced Excel, Python and BI tools with rigorous accounting training to transform complex data into strategic financial insights.
+                            <br></br>
                         </div>
 
                         <div className="btn_set">
